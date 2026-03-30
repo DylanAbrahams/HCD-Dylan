@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <main>
+        <section>
+            <h1>Supermarkt Navigatie</h1>
+            <p>Kies een product:</p>
+            <button onclick="selectProduct('melk')">Melk</button>
+            <button onclick="selectProduct('brood')">Brood</button>
+            <button onclick="selectProduct('cola')">Cola</button>
+        </section>
+
+        <section>
+            <h3>Volledige route:</h3>
+            <ul id="routeList"></ul>
+        </section>
+
+        <section>
+            <h3>Bewegen:</h3>
+            <button onclick="move('left')">Links</button>
+            <button onclick="move('up')">Vooruit</button>
+            <button onclick="move('down')">Achteruit</button>
+            <button onclick="move('right')">Rechts</button>
+        </section>
+
+        <section>
+            <h3>Denkbeeldige Kaart:</h3>
+            <div id="grid"></div>
+            <button onclick="waarBenIk()">Waar ben ik?</button>
+        </section>
+
+
+
+    </main>
+    <footer>
+
+    </footer>
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>
