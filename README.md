@@ -95,6 +95,55 @@ Een aantal vragen voor die ik heb zijn:
 - Wat voor screen reader(s) gebruikt u?
 Verder ben ik wel benieuwd hoe een normale dag voor hem eruit ziet dus ik zal daar vast ook wel naar vragen.
 
+NVDA screen reader op laptop
+
+NVDA (gratis, desktop)
+Jaws (duur, desktop) meeste gebruiken mensen niet
+talkback (Voor Android)
+voice over (Voor IOS)
+
+Hij gebruikt NVDA voor desktop en Talkback voor mobiel
+Zijn devices zijn desktop en mobiel.
+
+Berend ziet wel kleuren, maar ipv personen meer stippen. Hij ziet een grote vlek en kan er soort van omheen kijken.
+Niet altijd al blind, het begon bij overgrootmoeder en is gebleven in de genen. Het is sinds hij 10 jaar is. Hij kijkt wel naar het scherm, maar ziet weinig.
+
+Hij heeft een grote groene vierkant die hij op scherm kan hebben, kan zoomen en laten voorlezen.
+
+Zijn email: berend@berendconnect.nl
+
+meeste blinden kennen hun supermarkt uit hun hoofd
+
+Chill dat dit duidelijk is omschreven. Losse app situatie. Het is belangrijk dat het gelijk duidelijk waar de site over gaat.
+
+Hij zegt alle selecties in zijn navigatie. Werkt wel normaal
+
+Beste sites zijn illegaale streaming sites want ze zijn lekker simpel en doen niks verwarrends 
+
+dezelfde lijn maar apart gelezen.
+
+Kleuren worden omgedraaid en ziet mijn grid niet. (hij kan dat fixen)
+
+
+
+Niet veel toegevoegde aan de grid. Hij snapt wel dat het leuk is. Misschien wat meer contrast er in.
+
+Als je een 2e keer op de waar ben ik knop drukt moet hij wel nog een keer melden.
+
+Advies voor nienke: maak 1 blok van een chat + datum. Stop en start spraakopname op dezelfde knop zetten. Nog niet genoeg feedback zoals: je bent nu geluid aan het opnemen, je kunt naar onder om je bericht te beluisteren etc.
+
+Einde van de pagina is een prima plek voor een button, waar ben ik knop kan daar goed blijven want hij kan sne naar het einde van HTML.
+
+Denk aan sneltoetsen van NVDA: 
+Hij heeft zelf ook custom keybinds
+
+
+Plan voor volgende week: 
+- Knoppen dezelfde rij maar niet allemaal in een keer lezen
+- Waar ben ik meerdere keren laten werken
+- Kleurcontrast grid. Rood op zwart (blauw op wit) is niet heel goed
+
+
 ### Checkout met Aya A
 Vandaag zijn we pas om 17.00 klaar dus heb ik samen met iemand uit mijn groepje de checkout gedaan. Ik heb de checkout met Aya A gedaan. Zij heeft het idee om tijdens een tekst te lezen met screen reader de optie te geven om te stoppen waar je bent gebleven, later terug kan komen en vervolgens verder kan waar hij/zij is gebleven. Ik heb laten zien wat ik had, ze vond het wel een leuk idee.
 
