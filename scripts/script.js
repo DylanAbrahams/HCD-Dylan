@@ -89,11 +89,13 @@ function move(direction) {
   updateGrid();
 }
 
-// "Waar ben ik?" knop - geeft rij/kolom weergave
-function waarBenIk() {
+// Locatie knop
+function showLocation() {
   const rij = currentPosition.y + 1;    // tellen vanaf 1
   const kolom = currentPosition.x + 1;  // tellen vanaf 1
-  alert(`Je staat in rij ${rij}, kolom ${kolom}`);
+
+  const statusEl = document.getElementById("status");
+  statusEl.textContent = `Je staat in rij ${rij}, kolom ${kolom}`;
 }
 
 // Init
