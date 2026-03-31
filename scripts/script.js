@@ -61,7 +61,6 @@ function calculateSteps() {
   return steps;
 }
 
-// Update route lijst
 function updateRouteList() {
   if (!targetPosition) {
     routeList.innerHTML = "<li>Kies eerst een product</li>";
@@ -73,7 +72,9 @@ function updateRouteList() {
   if (steps.length === 0) {
     routeList.innerHTML = "<li>Je bent aangekomen bij je product!</li>";
   } else {
-    routeList.innerHTML = steps.map(s => `<li>${s.count} ${s.count === 1 ? "stap" : "stappen"} ${s.text}</li>`).join("");
+    // Combineer alle stappen in één zin
+    const tekst = steps.map(s => `${s.count} ${s.count === 1 ? "stap" : "stappen"} ${s.text}`).join(", ");
+    routeList.innerHTML = `<li>${tekst}</li>`;
   }
 }
 

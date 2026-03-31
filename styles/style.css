@@ -4,18 +4,21 @@
 }
 
 html {
-    --primary-color: #000000;
-    --secondary-color: #000000;
     --background-color: #111;
 
     --black-color: black;
     --white-color: white;
+    --button-color: #00aaff;
+    --button-hover-color:#0088cc;
+
+    --product-color: #ff5555;
+    --user-color: #00ff00;
 }
 
 
 body {
   font-family: Arial, sans-serif;
-  background: #111;
+  background: var(--background-color);
   color: white;
   text-align: center;
   padding: 30px;
@@ -31,13 +34,13 @@ button {
   margin: 1em .2em;
   border: none;
   border-radius: 8px;
-  background: #00aaff;
+  background: var(--button-color);
   color: white;
   cursor: pointer;
 }
 
 button:hover {
-  background: #0088cc;
+  background: var(--button-hover-color);
 }
 
 #status {
@@ -70,9 +73,9 @@ ul {
 }
 
 .cell.product {
-  background: #ff5555;
+  background: var(--product-color);
 }
 
 .cell.player {
-  background: #00ff00;
+  background: var(--user-color);
 }

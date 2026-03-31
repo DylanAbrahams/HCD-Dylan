@@ -70,21 +70,33 @@ Vandaag werd ik gerandomized met Alexia. Ik heb het gevoel dat ik de afgelopen 1
 
 ## Dag 2 (31 maart)
 ### Een rant over mijn ochtend
-Vandaag begon verschrikkelijk. Ik ben al een tijdje verkouden, de parkeerplek waar ik altijd met de auto naartoe ga was dicht toen in aan kwam rijden en dinsdag is al een dag waar veel mensen daar moeten zijn. Ik moest ergens een woonwijk vinden met een parkeerplaats, maar overal zit het vol of kun je max 2h parkeren. Ik had uiteindelijk een plaats gevonden waar nog 1 plek beschikbaar was. Geen idee hoe, maar ik had mijn trein alsnog gehaald door nog te rennen naar station. Ik kwam nog net op tijd op school, anders was het essay schrijven...
+Vandaag begon verschrikkelijk. Ik ben al een tijdje verkouden, de parkeerplek waar ik altijd met de auto naartoe ga was dicht toen in aan kwam rijden en dinsdag is al een dag waar veel mensen daar moeten zijn. Blijkbaar was er gisteravond een overledene gevonden op die parkeerplaats. Ik moest ergens een woonwijk vinden met een parkeerplaats, maar overal zit het vol of kun je max 2h parkeren. Ik had uiteindelijk een plaats gevonden waar nog 1 plek beschikbaar was. Geen idee hoe, maar ik had mijn trein alsnog gehaald door nog te rennen naar station. Ik kwam nog net op tijd op school, anders was het essay schrijven...
 
+Artikel over wat is er is gebeurd:
 https://www.hcnieuws.nl/112/112/126155/overleden-persoon-aangetroffen-op-parkeerplaats-bij-station-n
 
 
-Mijn vragen voor Berend zijn:
-- Wat is uw ervaring met navigatie en/of Indoor Navigation?
-- Bent u geintereseerd in een prototype over Indoor Navigation?
-- Wat voor screen reader(s) gebruikt u?
 
 ### Werkzaamheden
 Anyways vandaag begonnen we met de weekly geek van vasilis en hadden we een wooclap gedaan. Ik denk dat ik veel van de vragen wel goed had, het ging dit keer ook veel meer over de inhoud. Vervolgens kwamen de testpersonen. Berend is er pas om 15.00 dus ik heb bijna de hele dag buiten het lokaal gewerkt.
 
+Vandaag was niet mijn meest productieve dag. Mijn focus was niet heel hoog. ben ik bezig geweest met mijn prototype meer screen reader friendly te maken. Ik heb gebruik van aria-live. Hier wist ik nog niet veel over dus ik heb wat kennis opgedaan op mozilla, link in bronnenlijst. 
 
+Ik ben mijn onderdelen langsgegaan om te zien wat meer screen reader friendly kan. Ik had eerst veel aria labels neergezet, maar omdat dit een site is voor alleen de persoon die een screen reader gaat gebruiken is het net zo makkelijk om dit als normale tekst neer te zetten. Bijvoorbeeld ipv een knop met "Vooruit" is het "Neem een stap vooruit".
 
+Ik heb bijvoorbeeld een aria-assertive gezet 
+
+Verder heb ik nog wat testen gedaan met Taba11y. Ze staan nu gewoon op chronologische volgorde. Als je tabt heb je eerst de knoppen om een product te kiezen, daarna de knoppen om te bewegen en onderaan de knop om je eigen locatie op te halen.
+
+Om 15:00 had ik mijn testmoment met Berend samen met mijn groepje.'
+Een aantal vragen voor die ik heb zijn:
+- Wat is uw ervaring met navigatie en/of Indoor Navigation?
+- Bent u geintereseerd in een prototype over Indoor Navigation?
+- Wat voor screen reader(s) gebruikt u?
+Verder ben ik wel benieuwd hoe een normale dag voor hem eruit ziet dus ik zal daar vast ook wel naar vragen.
+
+### Checkout met Aya A
+Vandaag zijn we pas om 17.00 klaar dus heb ik samen met iemand uit mijn groepje de checkout gedaan. Ik heb de checkout met Aya A gedaan. Zij heeft het idee om tijdens een tekst te lezen met screen reader de optie te geven om te stoppen waar je bent gebleven, later terug kan komen en vervolgens verder kan waar hij/zij is gebleven. Ik heb laten zien wat ik had, ze vond het wel een leuk idee.
 
 
 
