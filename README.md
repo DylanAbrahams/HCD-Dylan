@@ -95,6 +95,9 @@ Een aantal vragen voor die ik heb zijn:
 - Wat voor screen reader(s) gebruikt u?
 Verder ben ik wel benieuwd hoe een normale dag voor hem eruit ziet dus ik zal daar vast ook wel naar vragen.
 
+### Notities test met Berend
+Dit zijn al mijn notities die ik heb gemaakt tijdens mijn test met Berend, zowel uit mijn eigen test als van andere studenten.
+
 NVDA screen reader op laptop
 
 NVDA (gratis, desktop)
@@ -124,8 +127,6 @@ dezelfde lijn maar apart gelezen.
 
 Kleuren worden omgedraaid en ziet mijn grid niet. (hij kan dat fixen)
 
-
-
 Niet veel toegevoegde aan de grid. Hij snapt wel dat het leuk is. Misschien wat meer contrast er in.
 
 Als je een 2e keer op de waar ben ik knop drukt moet hij wel nog een keer melden.
@@ -138,21 +139,31 @@ Denk aan sneltoetsen van NVDA:
 Hij heeft zelf ook custom keybinds
 
 
-Plan voor volgende week: 
-- Knoppen dezelfde rij maar niet allemaal in een keer lezen
-- Waar ben ik meerdere keren laten werken
-- Kleurcontrast grid. Rood op zwart (blauw op wit) is niet heel goed
+
 
 
 ### Checkout met Aya A
 Vandaag zijn we pas om 17.00 klaar dus heb ik samen met iemand uit mijn groepje de checkout gedaan. Ik heb de checkout met Aya A gedaan. Zij heeft het idee om tijdens een tekst te lezen met screen reader de optie te geven om te stoppen waar je bent gebleven, later terug kan komen en vervolgens verder kan waar hij/zij is gebleven. Ik heb laten zien wat ik had, ze vond het wel een leuk idee.
 
 
-
-
 ## Weekoverzicht 
+Deze week ben ik begonnen aan mijn project. Ik heb gekozen voor onderdeel verwarring met als thema een indoor navigation om boodschappen te halen bij een supermarkt. Ik ben benieuwd hoe complex ik dit proces kan maken maar als nog te volgen is met een screen reader. Denk aan meerdere gangpaden, meerdere producten op 1 locatie met verschillende verdiepingen etc.
 
+Ik heb nu een prototype waarin je eerst een product kunt kiezen welk product je wil. Je kunt kiezen uit brood, melk & cola. Vervolgens kom je te weten hoeveel stappen je moet nemen naar voren/achter (Y) en hoeveel stappen naar links/rechts (X). Er is een overzicht van alle locaties (zowel jezelf als de procucten) in een grid. Deze is 6x6. Het grid was in eerste instantie bedoeld voor mezelf, maar omdat Berend wel iets kan zien en ook inzoomt op de inhoud. Daarnaast zijn er de 4 knoppen om een stap te nemen in de bijhorende richting en is er onderin een knop die de gebruiker verteld waar hij zich op dit moment bevindt. Bijvoorbeeld rij 2 kolum 3.
 
+<img src="img/readme-img/Week1-Prototype.png" alt="Afbeelding van het week 1 prototype" height=400px>
+
+Verder heb ik deze getest met Taba11y. Daar kwam wel een logische volgorde uit.
+<img src="img/readme-img/Week1-Taba11y.png" alt="Afbeelding van het week 1 prototype" height=400px>
+
+Tijdens mijn test ben ik tot een paar conclusies gekomen. Dit zijn de dingen die ik wil doen voor de volgende test
+- Knoppen dezelfde rij maar niet allemaal in een keer lezen
+- Waar ben ik meerdere keren laten werken
+- Kleurcontrast grid. Rood op zwart (blauw op wit) is niet heel goed
+
+Verder heb ik donderdag gesprek met clubje + Vasilis gehad en hij had nog wat tips voor me:
+Gebruik ul li button zodat je knoppen misschien apart werken.
+Addeventlistener ipv inline inline JavaScript
 
 ## Bronnenlijst
 
