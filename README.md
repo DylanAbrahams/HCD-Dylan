@@ -70,7 +70,7 @@ Vandaag werd ik gerandomized met Alexia. Ik heb het gevoel dat ik de afgelopen 1
 
 ## Dag 2 (31 maart)
 ### Een rant over mijn ochtend
-Vandaag begon verschrikkelijk. Ik ben al een tijdje verkouden, de parkeerplek waar ik altijd met de auto naartoe ga was dicht toen in aan kwam rijden en dinsdag is al een dag waar veel mensen daar moeten zijn. Blijkbaar was er gisteravond een overledene gevonden op die parkeerplaats. Ik moest ergens een woonwijk vinden met een parkeerplaats, maar overal zit het vol of kun je max 2h parkeren. Ik had uiteindelijk een plaats gevonden waar nog 1 plek beschikbaar was. Geen idee hoe, maar ik had mijn trein alsnog gehaald door nog te rennen naar station. Ik kwam nog net op tijd op school, anders was het essay schrijven...
+Vandaag had ik geen goede ochtend. Ik ben al een tijdje verkouden, de parkeerplek waar ik altijd met de auto naartoe ga was dicht toen in aan kwam rijden en dinsdag is al een dag waar veel mensen daar moeten zijn. Blijkbaar was er gisteravond een overledene gevonden op die parkeerplaats. Ik moest ergens een woonwijk vinden met een parkeerplaats, maar overal zit het vol of kun je max 2h parkeren. Ik had uiteindelijk een plaats gevonden waar nog 1 plek beschikbaar was. Geen idee hoe, maar ik had mijn trein alsnog gehaald door nog te rennen naar station. Ik kwam nog net op tijd op school, anders was het essay schrijven...
 
 Artikel over wat is er is gebeurd:
 https://www.hcnieuws.nl/112/112/126155/overleden-persoon-aangetroffen-op-parkeerplaats-bij-station-n
@@ -164,6 +164,36 @@ Tijdens mijn test ben ik tot een paar conclusies gekomen. Dit zijn de dingen die
 Verder heb ik donderdag gesprek met clubje + Vasilis gehad en hij had nog wat tips voor me:
 Gebruik ul li button zodat je knoppen misschien apart werken.
 Addeventlistener ipv inline inline JavaScript
+
+## Dag 3 (7 april)
+### Weekly Geek - Accessibility and the agentic web
+Ik heb maandag op 2e paasdag het artikel gelezen over Accessibility and the agentic web door Leonie Watson. Dit is dezelfde persoon waar Vasilis zijn 4 exclusive principes uit heeft gehaald
+
+De enige manier om blind te kunnen shoppen is met een assistent. Weinig winkels hebben een service, dus doen ze het online. Helaas zijn retail websites vaak niet toegankelijk genoeg.
+
+Een blinde heeft meer nodig dan een korte omschrijving voor een zin.(voorbeeld over een zwarte sjaal breiden)
+
+Enter AI.
+Screen readers kunnen met AI een beschrijving van een afbeelding genereren. Als mensen het zelf niet op hun site doen moet er wat anders te verzinnen zijn. AI kan een verkeerd beeld hebben van een afbeelding. Daarnaast moet de afbeelding alsnog te vinden zijn voor screen readers.
+
+Enter agentic AI.
+Agentic = De AI kan zelf acties uitvoeren ipv alleen antwoorden geven
+Een AI assistent die je helpt met producten vinden
+Innosearch - Werkt met 500.000 webshops en presenteert producten consistent voor screen readers. Komt ook met info waar je anders apart naar opzoek moet gaan
+
+Exit Websites?
+Waarom hebben we retail websites of uberhaupt websites nodig als we een agentic AI de actie kunnen laten doen? 
+Websites zullen vast niet verdwijnen maar er zal wel verschil komen
+Google AI Search vermindert veel verkeer op websites.
+
+And accessibility?
+Zal een agentic web die informatie kan genereren de toegankelijkheid verbeteren of verslechteren? 
+Hoe kunnen we weten dat de content toegankelijk is? 
+Als je 2x hetzelfde vraagt aan een AI met precies dezelfde prompt krijg je alsnog een ander antwoord.
+
+Eigen mening. AI moet nooit een website vervangen vanwege de inconsistenties maar kan wel als hulpmiddel worden gebruikt bij minder toegankelijke websites als alternatieve oplossing.
+
+Onderaan staat nog wat info over Leonie en wie ze is. En dit artikel is in 8 augustus 2025 geschreven
 
 ## Bronnenlijst
 
