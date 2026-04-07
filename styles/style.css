@@ -5,6 +5,7 @@
 
 html {
     --background-color: #111;
+    --grid-background-color: #222;
 
     --black-color: black;
     --white-color: white;
@@ -12,20 +13,31 @@ html {
     --button-hover-color:#0088cc;
 
     --product-color: #ffd755;
-    --user-color: #00ff00;
+    --user-color: #c570de;
 }
 
 
 body {
   font-family: Arial, sans-serif;
   background: var(--background-color);
-  color: white;
+  color: var(--white-color);
   text-align: center;
   padding: 30px;
 }
 
 section {
     margin:1em 0;
+}
+
+ul {
+  display:flex;
+  justify-content: center;
+  align-items:center;
+}
+
+ul li {
+  list-style-type: none;
+  display:inline;
 }
 
 button {
@@ -35,7 +47,7 @@ button {
   border: none;
   border-radius: 8px;
   background: var(--button-color);
-  color: white;
+  color: var(--white-color);
   cursor: pointer;
 }
 
@@ -68,7 +80,7 @@ ul {
 .cell {
   width: 40px;
   height: 40px;
-  background: #222;
+  background: var(--grid-background-color);
   border-radius: 5px;
 }
 

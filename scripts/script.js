@@ -92,11 +92,18 @@ function move(direction) {
 
 // Locatie knop
 function showLocation() {
-  const rij = currentPosition.y + 1;    // tellen vanaf 1
-  const kolom = currentPosition.x + 1;  // tellen vanaf 1
+  const rij = currentPosition.y + 1;
+  const kolom = currentPosition.x + 1;
 
   const statusEl = document.getElementById("status");
-  statusEl.textContent = `Je staat in rij ${rij}, kolom ${kolom}`;
+
+  // Eerst leegmaken
+  statusEl.textContent = "";
+
+  // Daarna opnieuw zetten (met kleine delay)
+  setTimeout(() => {
+    statusEl.textContent = `Je staat in rij ${rij}, kolom ${kolom}`;
+  }, 50); // 50ms is genoeg
 }
 
 // Init
