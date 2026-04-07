@@ -109,3 +109,23 @@ function showLocation() {
 // Init
 updateGrid();
 updateRouteList();
+
+// Product knoppen
+document.querySelectorAll('[data-product]').forEach(button => {
+  button.addEventListener('click', () => {
+    const product = button.dataset.product;
+    selectProduct(product);
+  });
+});
+
+// Move knoppen
+document.querySelectorAll('[data-move]').forEach(button => {
+  button.addEventListener('click', () => {
+    const direction = button.dataset.move;
+    move(direction);
+  });
+});
+
+// Locatie knop
+document.getElementById('showLocationBtn')
+  .addEventListener('click', showLocation);

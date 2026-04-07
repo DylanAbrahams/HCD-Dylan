@@ -195,6 +195,64 @@ Eigen mening. AI moet nooit een website vervangen vanwege de inconsistenties maa
 
 Onderaan staat nog wat info over Leonie en wie ze is. En dit artikel is in 8 augustus 2025 geschreven
 
+### Werkzaamheden
+Vandaag zijn we begonnen met de Weekly Geek. We hadden dit keer ook een vraag erbij waar je in eigen woorden het statement over Exit websites moet uitleggen. Ik denk dat ik wel een goed antwoord had daarvoor.
+
+Ik ben deze ochtend bezig geweest met de feedback verwerken die ik vorige week heb gekregen. De belangrijkste verbetering is dat ik nu 2 keer op de locatie knop kan drukken en deze 2 keer dezelfde locatie kan voorlezen. Dit heb ik gedaan door eerst de tekst voor 50ms weg te halen en dan weer terug te zetten. 
+
+Verder heb ik geprobeerd om het probleem op te lossen dat hij alle buttons in 1 keer opleest door er list items van te maken. 
+
+Kleur contrast paars / geel / zwart
+
+NVDA geinstalleerd
+
+Had nog de vraag hoe ik de taal kan aanpassen.
+
+### Test met Berend
+Hij heeft eem braille toetsenbord meegenomen. Wel interessant om te zien. Dit zou de enige oplossing te zijn voor iemand die zowel blind als doof is.
+
+Braham had grote borders, maar Berend vond ze wel prettig. Die kan ik er ook in doen
+Alisha had grote titel, die vond Berend ook wel fijn.
+
+High contrast mode: Hij ziet of mijn grid niet of hij maakt kleuren inverted. Op zich niet iets waar ik veel kan doen, want het zijn specifieke instellingen. Ik mag er een beetje mee kloten.
+
+Maak meerdere paginas
+
+Lichtblauwe knop met witte letters
+Paars niet goed te zien tov grijs
+
+Maak een vormpje voor de speler (lichte kleur)
+
+Contrast checkers op zoeken om contrast te zoeken tussen 2 kleuren
+
+Interactie met grid
+
+Laat weten bij welk product je bent aangekomen.
+
+Keybinds
+
+CTRL + NVDA Toets(Insert? misschien TAB) 
+
+Synthesizer NL downloaden
+
+Lettertype boeit niet echt. Liever geen cursief. Het liefst dikgedrukt.
+
+
+Mijn takeaways: 
+- Paars niet goed, zoek ander contrast OF vormpjes
+- Goede kleur knoppen maar niet goede witte tekst erin 
+- Meer borders (knoppen, secties, grid)
+- 2 pagina's
+    - 1 pagina om product te kiezen
+    - 1 pagina voor het navigeren
+- Keybinds
+    - Keybinds voor lopen (bv. ALT + SHIFT + Pijltjes)
+    - Keybind voor locatie horen (bv. ALT + SHIFT + L)
+    - Uitleg voor deze keybinds
+- Grotere tekst, altijd beter
+
+
+
 ## Bronnenlijst
 
 Indoor Navigatie
