@@ -268,7 +268,14 @@ Vandaag hebben we een 'halve' dag, wat betekende dat ons lokaal niet beschikbaar
 
 Vandaag wilde ik mijn website op delen in 2 pagina's. Een voor het kiezen van een product en de ander voor de navigatie. Ik heb nu op de eerste pagina (index.html) een overzicht van de 3 producten. Je kunt momenteel 1 van de 3 uitkiezen en vervolgens op een knop drukken om te gaan navigeren. Hier heb ik ook een apart script voor genaamd selection.js.
 
-Daarna heb ik de 2e pagina. Deze heb ik navigatie.html genoemd met erbij de script.html. 
+Daarna heb ik de 2e pagina. Deze heb ik navigatie.html genoemd met erbij de script.html. Nu heb je bovenaan het product al bepaald en kun je gelijk gaan navigeren.
+
+Ik had een tijdje mezelf bezig gehouden met het opschonen van mijn code. Ik had eerst een aparte sectie voor de tekst voor je eigen locatie. Deze is nu hetzelfde als waar de route staat. Dit is een stuk handiger. Verder heb ik nu ook weer wat duidelijkere teksten voor wanneer je een stap neemt. Je komt erachter dat je een stap hebt gezet en dat hoeveel stappen je in elke richting nog moet nemen.
+
+Als laatste heb ik nog keybinds toegevoegd. Je kunt door het grid heenlopen met de pijltoetsen. Omdat de pijltoetsen ook keybinds zijn voor screenreaders heb ik ervoor gezorgd dat je een combinatie moet doen van ALT & de pijltoetsen. Deze uitleg staat ook in de HTML.
+
+### Checkout met Melvin
+Vandaag heb ik checkout gedaan met Melvin, aangezien wij allebei vanuit huis hadden gewerkt. Melvin is bezig geweest met annotaties toevoegen aan zijn teksten en hij kan alineas selecteren met TAB. Voor morgen wil ik de styling beter hebben, denk aan contrast en grote letters en misschien meerdere producten tegelijk kunnen zoeken.
 
 
 ## Bronnenlijst
