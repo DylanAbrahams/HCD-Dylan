@@ -257,6 +257,18 @@ Mijn takeaways:
 
 
 
+
+
+
+
+
+## Dag 4 (13 april)
+### Werkzaamheden
+Vandaag hebben we een 'halve' dag, wat betekende dat ons lokaal niet beschikbaar was. Ik heb er voor gekozen om vanuit huis te werken aangezien ik weinig behoefte heb om de hele dag in de medialounge te zitten. Daarnaast heb ik dinsdag en vrijdag al alle feedback gehad die ik voor nu nodig heb. Morgen is er weer een test dus dan ben ik uiteraard weer op school.
+
+Vandaag wilde ik mijn website op delen in 2 pagina's. Een voor het kiezen van een product en de ander voor de navigatie. 
+
+
 ## Bronnenlijst
 
 Indoor Navigatie

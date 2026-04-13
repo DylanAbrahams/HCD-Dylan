@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Supermarkt Navigatie</title>
+
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+
+<body>
+
+  <header>
+    <h1>Supermarkt Navigatie</h1>
+    <p id="currentProduct">Laden...</p>
+  </header>
+
+  <main>
+
+    <!-- 🔊 SCREENREADER OUTPUT -->
+    <p id="route" aria-live="assertive" aria-atomic="true"></p>
+
+    <!-- 🎮 BESTURING -->
+    <section>
+      <h2>Bewegen</h2>
+
+      <button data-move="left">Links</button>
+      <button data-move="up">Vooruit</button>
+      <button data-move="down">Achteruit</button>
+      <button data-move="right">Rechts</button>
+    </section>
+
+    <!-- 🗺️ KAART (ALLEEN VISUEEL) -->
+    <section>
+      <h2>Kaart</h2>
+      <div id="grid"></div>
+    </section>
+
+    <button id="showLocationBtn">Huidige positie</button>
+
+  </main>
+
+  <script src="scripts/script.js"></script>
+
+</body>
+</html>

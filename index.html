@@ -1,56 +1,29 @@
 <!DOCTYPE html>
 <html lang="nl">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Indoor Navigation</title>
-    <link rel="stylesheet" href="styles/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product kiezen</title>
+  <link rel="stylesheet" href="styles/style.css">
 </head>
-
 <body>
-    <header>
 
-    </header>
-    <main>
-        <section>
-            <h1>Supermarkt Navigatie</h1>
-            <p id="productInstruction">Kies een product om de route te zien en te horen.</p>
-            <ul>
-                <li><button data-product="melk">Melk</button></li>
-                <li><button data-product="brood">Brood</button></li>
-                <li><button data-product="cola">Cola</button></li>
-            </ul>
-        </section>
+<main>
+  <h1>Supermarkt Navigatie</h1>
 
-        <section>
-            <h2>Volledige route:</h2>
-            <ul id="routeList" aria-live="polite"></ul>
-        </section>
+  <p>Kies een product:</p>
 
-        <section>
-            <h3>Bewegen:</h3>
-            <ul>
-                <li><button data-move="left">Beweeg een stap naar links</button></li>
-                <li><button data-move="up">Beweeg een stap vooruit</button></li>
-                <li><button data-move="down">Beweeg een stap achteruit</button></li>
-                <li><button data-move="right">Beweeg een stap naar rechts</button></li>
-            </ul>
-        </section>
+  <ul>
+    <li><button data-product="melk">Melk</button></li>
+    <li><button data-product="brood">Brood</button></li>
+    <li><button data-product="cola">Cola</button></li>
+  </ul>
 
-        <section>
-            <h3 aria-hidden="true">Denkbeeldige Kaart:</h3>
-            <div id="grid" aria-hidden="true"></div>
-            <button id="showLocationBtn">Druk deze knop om je huidige positie te horen</button>
-        </section>
+  <p id="feedback" aria-live="polite"></p>
 
-        <p id="status" aria-live="assertive"></p>
+  <button id="startRoute">Start navigatie</button>
+</main>
 
-    </main>
-    <footer>
-
-    </footer>
-    <script src="scripts/script.js"></script>
+<script src="scripts/selection.js"></script>
 </body>
-
 </html>
