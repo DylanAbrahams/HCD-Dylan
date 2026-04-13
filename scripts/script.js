@@ -56,7 +56,7 @@ function updateGrid() {
   if (productCell) productCell.el.classList.add("product");
 }
 
-// ---------------- ROUTE LOGICA ----------------
+// ---------------- ROUTE ----------------
 
 function getRoute() {
   const dx = targetPosition.x - currentPosition.x;
@@ -81,7 +81,7 @@ function updateRoute() {
   routeEl.textContent = getRoute();
 }
 
-// ---------------- BEWEGING ----------------
+// ---------------- BEWEGEN ----------------
 
 function move(direction) {
   switch (direction) {
@@ -131,14 +131,41 @@ document.addEventListener("keydown", (e) => {
   }
 });
 
-// ---------------- LOCATIE ----------------
+// ---------------- LOOPKNOPPEN (FIX) ----------------
+
+document.querySelectorAll("[data-move]").forEach(btn => {
+  btn.addEventListener("click", () => {
+    move(btn.dataset.move);
+  });
+});
+
+// ---------------- LOCATIE KNOP ----------------
+
+document
+  .getElementById("showLocationBtn")
+  .addEventListener("click", showLocation);
 
 function showLocation() {
   const rij = currentPosition.y + 1;
   const kolom = currentPosition.x + 1;
 
+  const dx = targetPosition.x - currentPosition.x;
+  const dy = targetPosition.y - currentPosition.y;
+
+  const parts = [];
+
+  if (dx > 0) parts.push(`${dx} stap${dx === 1 ? "" : "pen"} naar rechts`);
+  if (dx < 0) parts.push(`${Math.abs(dx)} stap${Math.abs(dx) === 1 ? "" : "pen"} naar links`);
+
+  if (dy > 0) parts.push(`${dy} stap${dy === 1 ? "" : "pen"} vooruit`);
+  if (dy < 0) parts.push(`${Math.abs(dy)} stap${Math.abs(dy) === 1 ? "" : "pen"} achteruit`);
+
+  const route = parts.length
+    ? `Nog ${parts.join(", ")} naar ${selectedProduct}`
+    : `Je bent aangekomen bij ${selectedProduct}`;
+
   routeEl.textContent =
-    `Je staat in rij ${rij}, kolom ${kolom}`;
+    `Je staat in rij ${rij}, kolom ${kolom}. ${route}`;
 }
 
 // ---------------- INIT ----------------
