@@ -74,16 +74,14 @@ function getRoute() {
     return `Je bent aangekomen bij ${selectedProduct}`;
   }
 
-  return `Route: Nog ${parts.join(", ")}`;
+  return `Route: ${parts.join(", ")}`;
 }
-
-// ---------------- UI + SCREENREADER (SINGLE SOURCE) ----------------
 
 function updateRoute() {
   routeEl.textContent = getRoute();
 }
 
-// ---------------- BEWEGEN ----------------
+// ---------------- BEWEGING ----------------
 
 function move(direction) {
   switch (direction) {
@@ -105,6 +103,34 @@ function move(direction) {
   updateRoute();
 }
 
+// ---------------- KEYBOARD (ALT + ARROWS) ----------------
+
+document.addEventListener("keydown", (e) => {
+  if (!e.altKey) return;
+
+  switch (e.key) {
+    case "ArrowUp":
+      e.preventDefault();
+      move("up");
+      break;
+
+    case "ArrowDown":
+      e.preventDefault();
+      move("down");
+      break;
+
+    case "ArrowLeft":
+      e.preventDefault();
+      move("left");
+      break;
+
+    case "ArrowRight":
+      e.preventDefault();
+      move("right");
+      break;
+  }
+});
+
 // ---------------- LOCATIE ----------------
 
 function showLocation() {
@@ -114,16 +140,6 @@ function showLocation() {
   routeEl.textContent =
     `Je staat in rij ${rij}, kolom ${kolom}`;
 }
-
-// ---------------- EVENTS ----------------
-
-document.querySelectorAll("[data-move]").forEach(btn => {
-  btn.addEventListener("click", () => move(btn.dataset.move));
-});
-
-document
-  .getElementById("showLocationBtn")
-  .addEventListener("click", showLocation);
 
 // ---------------- INIT ----------------
 
