@@ -250,6 +250,10 @@ Mijn takeaways:
     - Keybind voor locatie horen (bv. ALT + SHIFT + L)
     - Uitleg voor deze keybinds
 - Grotere tekst, altijd beter
+- Hoe meer uitleg, hoe beter
+
+
+## Weekoverzicht
 
 
 
