@@ -146,7 +146,7 @@ Hij heeft zelf ook custom keybinds
 Vandaag zijn we pas om 17.00 klaar dus heb ik samen met iemand uit mijn groepje de checkout gedaan. Ik heb de checkout met Aya A gedaan. Zij heeft het idee om tijdens een tekst te lezen met screen reader de optie te geven om te stoppen waar je bent gebleven, later terug kan komen en vervolgens verder kan waar hij/zij is gebleven. Ik heb laten zien wat ik had, ze vond het wel een leuk idee.
 
 
-## Weekoverzicht 
+## Week 1 Overzicht 
 Deze week ben ik begonnen aan mijn project. Ik heb gekozen voor onderdeel verwarring met als thema een indoor navigation om boodschappen te halen bij een supermarkt. Ik ben benieuwd hoe complex ik dit proces kan maken maar als nog te volgen is met een screen reader. Denk aan meerdere gangpaden, meerdere producten op 1 locatie met verschillende verdiepingen etc.
 
 Ik heb nu een prototype waarin je eerst een product kunt kiezen welk product je wil. Je kunt kiezen uit brood, melk & cola. Vervolgens kom je te weten hoeveel stappen je moet nemen naar voren/achter (Y) en hoeveel stappen naar links/rechts (X). Er is een overzicht van alle locaties (zowel jezelf als de procucten) in een grid. Deze is 6x6. Het grid was in eerste instantie bedoeld voor mezelf, maar omdat Berend wel iets kan zien en ook inzoomt op de inhoud. Daarnaast zijn er de 4 knoppen om een stap te nemen in de bijhorende richting en is er onderin een knop die de gebruiker verteld waar hij zich op dit moment bevindt. Bijvoorbeeld rij 2 kolum 3.
@@ -200,13 +200,10 @@ Vandaag zijn we begonnen met de Weekly Geek. We hadden dit keer ook een vraag er
 
 Ik ben deze ochtend bezig geweest met de feedback verwerken die ik vorige week heb gekregen. De belangrijkste verbetering is dat ik nu 2 keer op de locatie knop kan drukken en deze 2 keer dezelfde locatie kan voorlezen. Dit heb ik gedaan door eerst de tekst voor 50ms weg te halen en dan weer terug te zetten. 
 
-Verder heb ik geprobeerd om het probleem op te lossen dat hij alle buttons in 1 keer opleest door er list items van te maken. 
+Verder heb ik geprobeerd om het probleem op te lossen dat hij alle buttons in 1 keer opleest door er list items van te maken. Hiervoor heb ik NVDA geinstalleerd om dit te kunnen testen. Het werkt, alles wordt opgelezen, alleen omdat mijn laptop in het Engels is leest hij alle tekst met een Engelse stem voor, ondanks mijn site Nederlands is. Gelukkig leest hij voor Berend wel in het Nederlands op, maar ik moet even vragen aan hem hoe ik de taal kan aanpassen aangezien hij zowel Engels als Nederlands kan gebruiken en voor mij in NVDA de Nederlandse stem er niet tussen staat. Melvin heeft toevallig het tegenovergestelde. Zijn site is in het Engels maar zijn laptop is in het Nederlands en zijn screenreader leest dus zijn site in het Nederlands voor. Anyways, het maken van list items heeft het probleem niet opgelost, want hij leest nog steeds alle buttons op (tenzij je uiteraard TAB gebruikt), maar hij verteld nu wel dat een lijst is met X aantal knoppen. Dus dit is wel een stuk beter.
 
-Kleur contrast paars / geel / zwart
+Daarnaast heb ik nog wat kleuren aangepast. Ik had de vorige keer rood en groen op het grid, waarvaan Berend zei dat rood niet goed te zien was op het grid vergeleken met zwart, dus ik heb de vakjes van de producten nu geel gemaakt. Ik vond dat groen en geel wel iets te veel op elkaar leken, dus heb ik de groene aangepast naar paars. (uiteindelijk was dit niet een goed idee, waar ik nog achter kwam tijdens de test.)
 
-NVDA geinstalleerd
-
-Had nog de vraag hoe ik de taal kan aanpassen.
 
 ### Test met Berend
 Hij heeft eem braille toetsenbord meegenomen. Wel interessant om te zien. Dit zou de enige oplossing te zijn voor iemand die zowel blind als doof is.
@@ -238,7 +235,16 @@ Synthesizer NL downloaden
 Lettertype boeit niet echt. Liever geen cursief. Het liefst dikgedrukt.
 
 
-Mijn takeaways: 
+
+
+## Week 2 Overzicht
+Deze week heb ik maar 1 dag besteed aan HCD aangezien de vrije dagen en ik vooral aandacht moest besteden aan API. Ik ben vooral bezig geweest met de feedbackpunten die ik vorige week van Berend heb gekregen. Ik was hier mee bezig totdat ik om 1 uur de test ging doen met Berend.  
+
+<img src="img/readme-img/Week2-prototype.png" alt="Afbeelding van het week 2 NVDA" height=400px>
+
+<img src="img/readme-img/Week2-NVDA.png" alt="Afbeelding van het week 2 NVDA" height=400px>
+
+Mijn takeaways voor volgende week zijn: 
 - Paars niet goed, zoek ander contrast OF vormpjes
 - Goede kleur knoppen maar niet goede witte tekst erin 
 - Meer borders (knoppen, secties, grid)
@@ -251,12 +257,6 @@ Mijn takeaways:
     - Uitleg voor deze keybinds
 - Grotere tekst, altijd beter
 - Hoe meer uitleg, hoe beter
-
-
-## Weekoverzicht
-
-
-
 
 
 
@@ -277,8 +277,43 @@ Als laatste heb ik nog keybinds toegevoegd. Je kunt door het grid heenlopen met 
 ### Checkout met Melvin
 Vandaag heb ik checkout gedaan met Melvin, aangezien wij allebei vanuit huis hadden gewerkt. Melvin is bezig geweest met annotaties toevoegen aan zijn teksten en hij kan alineas selecteren met TAB. Voor morgen wil ik de styling beter hebben, denk aan contrast en grote letters en misschien meerdere producten tegelijk kunnen zoeken.
 
-### Dag 5 (14 april)
-Vandaag was het weer een testdag. Ik heb van tevoren nog vooral aan styling gezeten. Denk aan contrast, lettergroottes, 
+## Dag 5 (14 april)
+### Werkzaamheden
+Vandaag was het weer een testdag. Ik heb van tevoren nog vooral aan styling gezeten. Denk aan contrast, lettergroottes, borders om de sections etc. Verder heb ik een paar posities aangepast van bepaalde paragrafen in sections en zit er nu een knop om terug te gaan naar de index.
+
+### Test met Berend
+Aantekeningen test
+
+Dikke borders = niet heel sexy maar wel goed voor Berend
+
+Ik moet nog prefers high contrast filter toevoegen zodat de kleuren voor hem ook kloppen.
+
+Bij het bepalen van tekstgroottes:
+Hoeveel informatie kan iemand zien en welke informatie is er allemaal nodig?
+
+Meer headings toevoegen (waarschijnlijk)
+
+Grote tekst is nice maar alleen als het op maar 1 regel blijft. Dus SUPERMARKT NAVIGATIE op 1 regel. 
+
+GEBRUIK GEEN ALT + PIJLTOETSEN, GEBRUIK WAT ANDERS
+
+Groene misschien een klein beetje leger.
+
+Liever gelijk naar de volgende pagina (HOEFT NIET, WANT IK GA MEERDERE PRODUCTEN DOEN)
+
+Meerdere items zou leuk zijn.
+
+Heading bij de terug pagina.
+Button IN heading 3.
+h2-a-/h2
+
+Duidelijke boxes. Hij snapte de controls en de feedback bij lopen.
+
+De knoppen maken net als op een toetsenbord
+Dus:
+      OMHOOG
+LINKS OMLAAG RECHTS
+
 
 ## Bronnenlijst
 
