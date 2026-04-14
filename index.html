@@ -1,29 +1,37 @@
 <!DOCTYPE html>
 <html lang="nl">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Product kiezen</title>
-  <link rel="stylesheet" href="styles/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product kiezen</title>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
+
 <body>
 
-<main>
-  <h1>Supermarkt Navigatie</h1>
+    <main>
+        <section>
+            <h1>Supermarkt Navigatie</h1>
+        </section>
 
-  <p>Kies een product:</p>
+        <section>
+            <p>Kies een product:</p>
+        <ul>
+            <li><button data-product="melk">Melk</button></li>
+            <li><button data-product="brood">Brood</button></li>
+            <li><button data-product="cola">Cola</button></li>
+        </ul>
+        </section>
 
-  <ul>
-    <li><button data-product="melk">Melk</button></li>
-    <li><button data-product="brood">Brood</button></li>
-    <li><button data-product="cola">Cola</button></li>
-  </ul>
+        <section>
+        <p id="feedback" aria-live="polite">Kies een product om te beginnen.</p>
 
-  <p id="feedback" aria-live="polite">Kies een product om te beginnen.</p>
+        <button id="startRoute">Start navigatie</button>
+        </section>
+    </main>
 
-  <button id="startRoute">Start navigatie</button>
-</main>
-
-<script src="scripts/selection.js"></script>
+    <script src="scripts/selection.js"></script>
 </body>
+
 </html>

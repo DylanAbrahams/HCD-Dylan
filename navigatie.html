@@ -2,51 +2,54 @@
 <html lang="nl">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Supermarkt Navigatie</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Supermarkt Navigatie</title>
 
-  <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/style.css" />
 </head>
 
 <body>
 
-  <header>
-    <h1>Supermarkt Navigatie</h1>
-    <p id="currentProduct">Laden...</p>
-  </header>
 
-  <main>
-    <section>
-    <!-- SCREENREADER OUTPUT -->
-    <p id="route" aria-live="assertive" aria-atomic="true"></p>
-    </section>
 
-    <!-- BESTURING -->
-    <section>
-      <h2>Bewegen</h2>
-        <p>Je kunt bewegen met de 4 onderstaande knoppen. Je kan ook bewegen met alt en de pijltoetsen.</p>
-      <button data-move="left">Links</button>
-      <button data-move="up">Vooruit</button>
-      <button data-move="down">Achteruit</button>
-      <button data-move="right">Rechts</button>
-    </section>
+    <main>
+        <section>
+            <h1>Supermarkt Navigatie</h1>
+        </section>
 
-    <!-- KAART (ALLEEN VISUEEL) -->
-    <section>
-      <h2>Kaart</h2>
-      <div id="grid"></div>
-    </section>
+        <section>
+            <!-- SCREENREADER OUTPUT -->
+            <p id="currentProduct">Laden...</p>
+            <p id="route" aria-live="assertive" aria-atomic="true"></p>
+        </section>
 
-    <button id="showLocationBtn">Huidige positie</button>
+        <!-- BESTURING -->
+        <section>
+            <h2>Bewegen</h2>
+            <p>Je kunt bewegen met de 4 onderstaande knoppen. Je kan ook bewegen met alt en de pijltoetsen.</p>
+            <button data-move="left">Links</button>
+            <button data-move="up">Vooruit</button>
+            <button data-move="down">Achteruit</button>
+            <button data-move="right">Rechts</button>
+        </section>
 
-    <section>
-        <a href="index.html">Klik hier om een ander product te kiezen.</a>
-    </section>
+        <!-- KAART (ALLEEN VISUEEL) -->
+        <section>
+            <h2>Kaart</h2>
+            <div id="grid"></div>
+        </section>
 
-  </main>
+        <button id="showLocationBtn">Huidige positie</button>
 
-  <script src="scripts/script.js"></script>
+        <section>
+            <a href="index.html">Klik hier om een ander product te kiezen.</a>
+        </section>
+
+    </main>
+
+    <script src="scripts/script.js"></script>
 
 </body>
+
 </html>
