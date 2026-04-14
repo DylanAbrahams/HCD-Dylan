@@ -277,6 +277,8 @@ Als laatste heb ik nog keybinds toegevoegd. Je kunt door het grid heenlopen met 
 ### Checkout met Melvin
 Vandaag heb ik checkout gedaan met Melvin, aangezien wij allebei vanuit huis hadden gewerkt. Melvin is bezig geweest met annotaties toevoegen aan zijn teksten en hij kan alineas selecteren met TAB. Voor morgen wil ik de styling beter hebben, denk aan contrast en grote letters en misschien meerdere producten tegelijk kunnen zoeken.
 
+### Dag 5 (14 april)
+Vandaag was het weer een testdag. Ik heb van tevoren nog vooral aan styling gezeten. Denk aan contrast, lettergroottes, 
 
 ## Bronnenlijst
 
