@@ -26,11 +26,16 @@ body {
 }
 
 section {
-    margin:1em 0;
+    margin:2em 0;
+    padding: 2em;
 }
 
 h1 {
   font-size:8em;
+}
+
+h2 {
+  font-size: 3em;
 }
 
 p {
