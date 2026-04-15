@@ -238,11 +238,15 @@ Lettertype boeit niet echt. Liever geen cursief. Het liefst dikgedrukt.
 
 
 ## Week 2 Overzicht
-Deze week heb ik maar 1 dag besteed aan HCD aangezien de vrije dagen en ik vooral aandacht moest besteden aan API. Ik ben vooral bezig geweest met de feedbackpunten die ik vorige week van Berend heb gekregen. Ik was hier mee bezig totdat ik om 1 uur de test ging doen met Berend.  
+Deze week heb ik maar 1 dag besteed aan HCD aangezien de vrije dagen en ik vooral aandacht moest besteden aan API. Ik ben vooral bezig geweest met de feedbackpunten die ik vorige week van Berend heb gekregen. Ik was hier mee bezig totdat ik om 1 uur de test ging doen met Berend. 
 
-<img src="img/readme-img/Week2-prototype.png" alt="Afbeelding van het week 2 NVDA" height=400px>
+<img src="img/readme-img/Week2-prototype.png" alt="Afbeelding van het week 2 prototype" height=400px>
+
+Verder heb ik NVDA geinstalleerd en gedownloadt. Ik heb hier fijn mee kunnen testen met de screen reader. Fijn dat ik voor mezelf ook wat intuitie kan opbouwen door zelf de screen reader te gebruiken. Pas als ik in mijn website met mijn ogen dicht het product kan vinden, betekent het dat ik hem goed in elkaar heb gezet.
 
 <img src="img/readme-img/Week2-NVDA.png" alt="Afbeelding van het week 2 NVDA" height=400px>
+
+Verder heb ik feedback gekregen van mijn test met Berend en het voortgangsgesprek van vrijdag.
 
 Mijn takeaways voor volgende week zijn: 
 - Paars niet goed, zoek ander contrast OF vormpjes
@@ -258,8 +262,7 @@ Mijn takeaways voor volgende week zijn:
 - Grotere tekst, altijd beter
 - Hoe meer uitleg, hoe beter
 
-
-
+Verder had Vasilis nog het idee om daadwerkelijk Geolocation te gebruiken en hem echt op locatie te laten werken. Ik weet nog niet of dat heel praktisch is om te testen en of het uberhaupt zou werken, maar is wel een leuk idee om over na te denken. Om een product bv. in de hoek van een lokaal te zetten en kijken of je hem via het apparaat kan vinden, zou wel tof zijn.
 
 
 ## Dag 4 (13 april)
@@ -279,7 +282,7 @@ Vandaag heb ik checkout gedaan met Melvin, aangezien wij allebei vanuit huis had
 
 ## Dag 5 (14 april)
 ### Werkzaamheden
-Vandaag was het weer een testdag. Ik heb van tevoren nog vooral aan styling gezeten. Denk aan contrast, lettergroottes, borders om de sections etc. Verder heb ik een paar posities aangepast van bepaalde paragrafen in sections en zit er nu een knop om terug te gaan naar de index.
+Vandaag was het weer een testdag. Ik heb van tevoren nog vooral aan styling gezeten. Denk aan contrast, lettergroottes, borders om de sections etc. Verder heb ik een paar posities aangepast van bepaalde paragrafen in sections en zit er nu een knop om terug te gaan naar de index. Er zijn een hoop kleine aanpassingen die tot het resultaat zijn gekomen waar ik nu ben, de foto staat in het weekoverzicht.
 
 ### Test met Berend
 Aantekeningen test
@@ -313,6 +316,20 @@ De knoppen maken net als op een toetsenbord
 Dus:
       OMHOOG
 LINKS OMLAAG RECHTS
+
+## Week 3 Overzicht 
+Tekst over 2 paginas
+
+<img src="img/readme-img/Week3-prototype-product.png" alt="Afbeelding van het week 3 prototype, pagina product" height=400px>
+
+Ook heb de styling meer aangepast naar de wens van Berend. Hij vindt het fijn om grote letters te hebben en dikke borders om goed te zien waar alles zit en hoeo de pagina is ingedeeld. Verder heb ik de knoppen aangepast om een border te hebben met tekst erin zonder achtergrond, wat mij mooier en duidelijker leek dan een blauwe knop met witte/zwarte tekst erin.
+
+<img src="img/readme-img/Week3-prototype-product-2.png" alt="Afbeelding van het week 3 prototype, pagina product" height=400px>
+
+Tekst over de 2e pagina
+
+<img src="img/readme-img/Week3-prototype-navigatie.png" alt="Afbeelding van het week 3 prototype, pagina navigatie" height=400px>
+
 
 
 ## Bronnenlijst
