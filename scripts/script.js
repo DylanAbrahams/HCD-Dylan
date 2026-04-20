@@ -2,27 +2,80 @@ const routeEl = document.getElementById("route");
 const gridDiv = document.getElementById("grid");
 
 let gridSize = 6;
-let currentPosition = { x: 0, y: 0 };
+let currentPosition = { x: 0, y: 5 };
 
-// producten
+// ---------------- PRODUCTS ----------------
+
 const products = {
-  melk: { x: 2, y: 5 },
-  brood: { x: 1, y: 2 },
-  cola: { x: 4, y: 3 }
+  appel: { x: 0, y: 0 },
+  banaan: { x: 5, y: 5 },
+
+  melk: { x: 1, y: 3 },
+  brood: { x: 2, y: 3 },
+  pasta: { x: 3, y: 2 },
+  rijst: { x: 4, y: 2 },
+
+  cola: { x: 0, y: 1 },
+  water: { x: 5, y: 1 },
+
+  chips: { x: 3, y: 0 }
 };
 
-// ---------------- PRODUCT ----------------
+// ---------------- QUEUE ----------------
 
-const selectedProduct = localStorage.getItem("selectedProduct");
+let productQueue = JSON.parse(
+  localStorage.getItem("selectedProducts")
+);
 
-if (!selectedProduct) {
+if (!productQueue || productQueue.length === 0) {
   window.location.href = "index.html";
 }
 
-const targetPosition = products[selectedProduct];
+let currentProduct = productQueue.shift();
+let targetPosition = products[currentProduct];
 
 document.getElementById("currentProduct").textContent =
-  `Navigatie naar: ${selectedProduct}`;
+  `Navigatie naar: ${currentProduct}`;
+
+// ---------------- NEXT PRODUCT ----------------
+
+function nextProduct() {
+  if (productQueue.length === 0) {
+    routeEl.textContent = "Alle producten gevonden";
+    return;
+  }
+
+  currentProduct = productQueue.shift();
+  targetPosition = products[currentProduct];
+
+  document.getElementById("currentProduct").textContent =
+    `Navigatie naar: ${currentProduct}`;
+
+  updateGrid();
+  updateRoute();
+}
+
+// ---------------- SKIP PRODUCT ----------------
+
+function skipProduct() {
+  if (productQueue.length === 0) {
+    routeEl.textContent = "Geen producten meer om te skippen";
+    return;
+  }
+
+  // huidig product naar achteren zetten
+  productQueue.push(currentProduct);
+
+  // volgende pakken
+  currentProduct = productQueue.shift();
+  targetPosition = products[currentProduct];
+
+  document.getElementById("currentProduct").textContent =
+    `Navigatie naar: ${currentProduct}`;
+
+  updateGrid();
+  updateRoute();
+}
 
 // ---------------- GRID ----------------
 
@@ -43,13 +96,17 @@ function createGrid() {
 }
 
 function updateGrid() {
-  grid.forEach(c => (c.el.className = "cell"));
+  grid.forEach(c => {
+    c.el.className = "cell";
+  });
 
+  // player
   const player = grid.find(
     c => c.x === currentPosition.x && c.y === currentPosition.y
   );
   if (player) player.el.classList.add("player");
 
+  // current product
   const productCell = grid.find(
     c => c.x === targetPosition.x && c.y === targetPosition.y
   );
@@ -70,30 +127,46 @@ function getRoute() {
   if (dy > 0) parts.push(`${dy} stap${dy === 1 ? "" : "pen"} vooruit`);
   if (dy < 0) parts.push(`${Math.abs(dy)} stap${Math.abs(dy) === 1 ? "" : "pen"} achteruit`);
 
-  if (parts.length === 0) {
-    return `Je bent aangekomen bij ${selectedProduct}`;
-  }
-
-  return `Route: ${parts.join(", ")}`;
+  return parts.length
+    ? `Route naar ${currentProduct}: ${parts.join(", ")}`
+    : `Je bent aangekomen bij ${currentProduct}`;
 }
 
 function updateRoute() {
   routeEl.textContent = getRoute();
 }
 
-// ---------------- BEWEGEN ----------------
+// ---------------- ARRIVAL CHECK ----------------
+
+function checkArrival() {
+  if (
+    currentPosition.x === targetPosition.x &&
+    currentPosition.y === targetPosition.y
+  ) {
+    routeEl.textContent = `${currentProduct} gevonden`;
+
+    setTimeout(() => {
+      nextProduct();
+    }, 1000);
+  }
+}
+
+// ---------------- MOVEMENT ----------------
 
 function move(direction) {
   switch (direction) {
     case "up":
       if (currentPosition.y < gridSize - 1) currentPosition.y++;
       break;
+
     case "down":
       if (currentPosition.y > 0) currentPosition.y--;
       break;
+
     case "left":
       if (currentPosition.x > 0) currentPosition.x--;
       break;
+
     case "right":
       if (currentPosition.x < gridSize - 1) currentPosition.x++;
       break;
@@ -101,44 +174,50 @@ function move(direction) {
 
   updateGrid();
   updateRoute();
+  checkArrival();
 }
 
-// ---------------- KEYBOARD (ALT + SHIFT + ARROWS) ----------------
+// ---------------- KEYBOARD ----------------
 
 document.addEventListener("keydown", (e) => {
-  // Alleen reageren als ALT + SHIFT ingedrukt zijn
   if (!(e.altKey && e.shiftKey)) return;
 
-  switch (e.key) {
-    case "ArrowUp":
+  const key = e.key.toLowerCase();
+
+  switch (key) {
+    case "arrowup":
       e.preventDefault();
       move("up");
       break;
 
-    case "ArrowDown":
+    case "arrowdown":
       e.preventDefault();
       move("down");
       break;
 
-    case "ArrowLeft":
+    case "arrowleft":
       e.preventDefault();
       move("left");
       break;
 
-    case "ArrowRight":
+    case "arrowright":
       e.preventDefault();
       move("right");
       break;
 
     case "l":
-    case "L": // voor de zekerheid (Shift kan hoofdletter maken)
       e.preventDefault();
       showLocation();
+      break;
+
+    case "s":
+      e.preventDefault();
+      skipProduct();
       break;
   }
 });
 
-// ---------------- LOOPKNOPPEN (FIX) ----------------
+// ---------------- BUTTONS ----------------
 
 document.querySelectorAll("[data-move]").forEach(btn => {
   btn.addEventListener("click", () => {
@@ -146,7 +225,12 @@ document.querySelectorAll("[data-move]").forEach(btn => {
   });
 });
 
-// ---------------- LOCATIE KNOP ----------------
+// SKIP BUTTON (JOUW HTML FIX)
+document
+  .getElementById("skipProductBtn")
+  .addEventListener("click", skipProduct);
+
+// ---------------- LOCATION ----------------
 
 document
   .getElementById("showLocationBtn")
@@ -156,23 +240,8 @@ function showLocation() {
   const rij = currentPosition.y + 1;
   const kolom = currentPosition.x + 1;
 
-  const dx = targetPosition.x - currentPosition.x;
-  const dy = targetPosition.y - currentPosition.y;
-
-  const parts = [];
-
-  if (dx > 0) parts.push(`${dx} stap${dx === 1 ? "" : "pen"} naar rechts`);
-  if (dx < 0) parts.push(`${Math.abs(dx)} stap${Math.abs(dx) === 1 ? "" : "pen"} naar links`);
-
-  if (dy > 0) parts.push(`${dy} stap${dy === 1 ? "" : "pen"} vooruit`);
-  if (dy < 0) parts.push(`${Math.abs(dy)} stap${Math.abs(dy) === 1 ? "" : "pen"} achteruit`);
-
-  const route = parts.length
-    ? `Nog ${parts.join(", ")} naar ${selectedProduct}`
-    : `Je bent aangekomen bij ${selectedProduct}`;
-
   routeEl.textContent =
-    `Je staat in rij ${rij}, kolom ${kolom}. ${route}`;
+    `Je staat in rij ${rij}, kolom ${kolom}. ${getRoute()}`;
 }
 
 // ---------------- INIT ----------------

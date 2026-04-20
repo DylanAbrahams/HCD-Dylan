@@ -45,6 +45,10 @@ h2 {
   }
 }
 
+h3 {
+  font-size:2.4em;
+}
+
 p {
   font-size:2em;
 }
@@ -60,7 +64,7 @@ ul li {
   display:inline;
 }
 
-button, a{
+button, a {
   font-size: 2em;
   padding: 8px 15px;
   margin: 1em .2em;
@@ -73,9 +77,14 @@ button, a{
   cursor: pointer;
   text-decoration: none;
 }
-
 button:hover, a:hover {
   background: var(--button-hover-color);
+  color: white;
+}
+button.selected {
+  background: var(--button-color);
+  color: var(--black-color);
+  border-color: var(--button-color);
 }
 
 #status {
