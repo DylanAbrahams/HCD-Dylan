@@ -2,51 +2,65 @@
 <html lang="nl">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Product kiezen</title>
-  <link rel="stylesheet" href="styles/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product kiezen</title>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
 
-<main>
+    <main>
 
-  <section>
-    <h1>Supermarkt Navigatie</h1>
-  </section>
+        <section>
+            <h1>Supermarkt Navigatie</h1>
+        </section>
 
-  <section>
-    <h2>Kies producten</h2>
+        <section>
+            <h2>Kies één of meerdere producten:</h2>
 
-    <ul>
-      <li><button data-product="appel">Appel</button></li>
-      <li><button data-product="banaan">Banaan</button></li>
-      <li><button data-product="melk">Melk</button></li>
-      <li><button data-product="brood">Brood</button></li>
-      <li><button data-product="pasta">Pasta</button></li>
-      <li><button data-product="rijst">Rijst</button></li>
-      <li><button data-product="cola">Cola</button></li>
-      <li><button data-product="water">Water</button></li>
-      <li><button data-product="chips">Chips</button></li>
-    </ul>
-  </section>
+            <h3>Vers</h3>
+            <ul>
+                <li><button data-product="appel">Appel</button></li>
+                <li><button data-product="banaan">Banaan</button></li>
+            </ul>
 
-  <section>
-    <h2>Geselecteerde producten</h2>
-    <p id="selectedList">Nog geen producten gekozen.</p>
+            <h3>Basisproducten</h3>
+            <ul>
+                <li><button data-product="melk">Melk</button></li>
+                <li><button data-product="brood">Brood</button></li>
+                <li><button data-product="pasta">Pasta</button></li>
+                <li><button data-product="rijst">Rijst</button></li>
+            </ul>
 
-    <button id="startRoute">Start navigatie</button>
+            <h3>Dranken</h3>
+            <ul>
+                <li><button data-product="cola">Cola</button></li>
+                <li><button data-product="water">Water</button></li>
+            </ul>
 
-    <!-- screen reader feedback -->
-  <p id="liveStatus" aria-live="polite" aria-atomic="true" class="sr-only"></p>
-  </section>
+            <h3>Snacks</h3>
+            <ul>
+                <li><button data-product="chips">Chips</button></li>
+            </ul>
+        </section>
 
-  
+        <section>
+            <h2>Geselecteerde producten</h2>
+            <p id="selectedList">Nog geen producten gekozen.</p>
 
-</main>
+            <button id="startRoute">Start navigatie</button>
+        </section>
 
-<script src="scripts/selection.js"></script>
+        <section>
+            <p id="liveStatus" aria-live="polite" aria-atomic="true">
+                Geen producten geselecteerd
+            </p>
+        </section>
+
+    </main>
+
+    <script src="scripts/selection.js"></script>
 </body>
 
 </html>
