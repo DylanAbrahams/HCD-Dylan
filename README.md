@@ -353,7 +353,17 @@ Vandaag begonnen we met nog een uitleg over de exclusive design principes. Vasil
 
 Ik heb een lijstje gemaakt voor wat ik vandaag (en morgen ging doen), dus die ga ik bij deze af. Ten eerste heb SHIFT toegevoegd aan de keybinds. Verder heb ik een keybind toegevoegd voor de locatieknop en heb ik de 4 beweegknoppen iets anders gepositioneerd. Ook heb ik de onderste link (om terug te gaan naar producten) een h2 gemaakt. Dit is een a in een h2, was een aanrader van Berend. Wat ik niet wist is dat de fontsize van een a en van de h2 bij elkaar zouden optellen dus ik heb hier aparte styling vooor moeten geven.
 
-Prefers high contrast
+Berend gebruikt met zijn screen reader altijd high contrast, omdat hij dat fijner vindt voor de meeste websites. Dit had wel het gevolg dat de kleuren op mijn grid niet zichtbaar zouden zijn, waardoor hij tijdens het testen het eraf moest halen. Ik heb code toegevoegd waardoor de kleuren nu wel zichtbaar zijn met "forced-colors".
+
+Verder heb ik vandaag ervoor gezorgd dat je meerdere producten kunt kiezen op de eerste pagina. Daarnaast zijn er nu ook meerdere opties. Je kunt zoveel producten kiezen als je wil. Ik had wel mijn screen reader code wat moeten aanpassen, want hij ging nu elke keer dat je een product ging uitkiezen de hele lijst lezen. Melvin zei dat het leek op "ik ga op reis en ik neem mee". 
+
+Vervolgens heb ik dit ook toegepast op het navigatie script. Ik heb ervoor gezorgd dat je geleid wordt naar 1 product per keer (aangezien je niet overwhelmed wil worden door meerdere tegelijk). Momenteel is de volgorde nog de volgorde van de welke knoppen je als eerste hebt geklikt op de producten pagina. Je hebt de mogelijkheid om een product te skippen, deze zou dan als laatste nog een keer tevoorschijn komen. Hier is zowel een knop voor als de keybind SHIFT + ALT + S. 
+
+Verder had ik voor de grap nog snake gemaakt wat inhoud dat wanneer je een product hebt gevonden er een extra blokje achter het speler blokje loopt. Het idee was om wat nonsense toe te voegen, maar hier is niet heel veel aan. Ik kan het er in houden voor de lol.
+
+### Checkout met Julius
+Vandaag werd ik gerandomized met Alisha. Zij was er niet. Bijna 30 mensen waren er niet meer. Ik had mn checkout gedaan met Julius. Hij heeft een video player voor Darice, wie doof is. Hij heeft een video met een irritante piep, wat hij over wilde brengen naar beeld. Om het irritanter te maken heeft hij de PIEP tekst meer in beeld en geel gemaakt en een HUE groot en fel gemaakt. Morgen ben ik van plan om de sneltoetsen mooier weer te geven, misschien de volgorde van producten wat beter te doen, misschien wat nonsense en uiteraard testen.
+
 
 
 
