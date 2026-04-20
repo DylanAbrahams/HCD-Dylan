@@ -1,56 +1,65 @@
 let selectedProducts = [];
 
-const feedbackEl = document.getElementById("feedback");
+const selectedList = document.getElementById("selectedList");
+const liveStatus = document.getElementById("liveStatus");
 
-// 👉 Standaard tekst bij laden pagina
-feedbackEl.textContent = "Kies één of meerdere producten om te beginnen.";
-
-// Product kiezen (toggle systeem)
+// Product toggles
 document.querySelectorAll('[data-product]').forEach(button => {
   button.addEventListener('click', () => {
+
     const product = button.dataset.product;
 
     if (selectedProducts.includes(product)) {
-      // verwijderen
       selectedProducts = selectedProducts.filter(p => p !== product);
       button.classList.remove("selected");
+
+      liveStatus.textContent = `${product} verwijderd`;
     } else {
-      // toevoegen
       selectedProducts.push(product);
       button.classList.add("selected");
+
+      liveStatus.textContent = `${product} toegevoegd`;
     }
 
-    updateFeedback();
+    updateList();
   });
 });
 
-// Feedback updaten
-function updateFeedback() {
+// Visuele lijst updaten
+function updateList() {
   if (selectedProducts.length === 0) {
-    feedbackEl.textContent = "Kies één of meerdere producten om te beginnen.";
+    selectedList.textContent = "Nog geen producten gekozen.";
     return;
   }
 
-  feedbackEl.textContent = `Gekozen: ${selectedProducts.join(", ")}`;
+  selectedList.textContent = selectedProducts.join(", ");
 }
 
 // Start navigatie
-document.getElementById('startRoute').addEventListener('click', () => {
+document.getElementById("startRoute").addEventListener("click", () => {
 
   if (selectedProducts.length === 0) {
-    feedbackEl.textContent = "Kies eerst minstens één product voordat je verder gaat.";
+    liveStatus.textContent = "Geen producten geselecteerd";
     return;
   }
 
-  feedbackEl.textContent =
+  const message =
     `Navigatie gestart naar: ${selectedProducts.join(", ")}`;
 
+  // reset + trigger ARIA opnieuw
+  liveStatus.textContent = "";
+  setTimeout(() => {
+    liveStatus.textContent = message;
+  }, 50);
+
+  // opslaan selectie
   localStorage.setItem(
     "selectedProducts",
     JSON.stringify(selectedProducts)
   );
 
+  // genoeg tijd voor volledige speech
   setTimeout(() => {
     window.location.href = "navigatie.html";
-  }, 800);
+  }, 2500);
 });

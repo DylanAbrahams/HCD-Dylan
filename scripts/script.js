@@ -2,12 +2,12 @@ const routeEl = document.getElementById("route");
 const gridDiv = document.getElementById("grid");
 
 let gridSize = 6;
-let currentPosition = { x: 0, y: 5 };
+let currentPosition = { x: 0, y: 0 };
 
 // ---------------- PRODUCTS ----------------
 
 const products = {
-  appel: { x: 0, y: 0 },
+  appel: { x: 0, y: 2 },
   banaan: { x: 5, y: 5 },
 
   melk: { x: 1, y: 3 },
