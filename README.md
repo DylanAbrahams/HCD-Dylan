@@ -318,7 +318,9 @@ Dus:
 LINKS OMLAAG RECHTS
 
 ## Week 3 Overzicht 
-Tekst over 2 paginas
+Deze week heb ik mijn website opgedeeld in 2 pagina's. De eerste pagina is puur voor het uitkiezen van een product, als je deze hebt gekozen kun je naar de volgende pagina. De 2e pagina is voor de navigatie naar het product. Ik heb nu 2 htmls met allebei hun eigen script: selection.js voor de index (product uitkiezen) en script.js voor de navigatie.html (navigatie). Nu ik erover nadenk kan ik die namen nog aanpassen. 
+
+Op de eerste pagina kun je momenteel een product uitkiezen. Je hebt de keuze uit brood, melk en cola. Als je een product gekozen hebt moet je nog op de knop drukken om naar de volgende pagina te gaan. Later ga ik er nog voor zorgen dat je meerdere producten tegelijk kan kiezen.
 
 <img src="img/readme-img/Week3-prototype-product.png" alt="Afbeelding van het week 3 prototype, pagina product" height=400px>
 
@@ -326,9 +328,35 @@ Ook heb de styling meer aangepast naar de wens van Berend. Hij vindt het fijn om
 
 <img src="img/readme-img/Week3-prototype-product-2.png" alt="Afbeelding van het week 3 prototype, pagina product" height=400px>
 
-Tekst over de 2e pagina
+Op de 2e pagina staat nu alles over de navigatie. Ik heb de code een stuk verbeterd. Nu is er maar 1 regel waar feedback komt die wordt voorgelezen. Zowel de beweegknoppen als de locatieknop geven op dezelfde regel hun feedback. Ook heb ik de tekst van de beweegknoppen veranderd naar "Links" ipv "Stap naar links", hij vond dit fijner aangezien hij wel begrijpt wat het doet. Verder heb ik nog veel aan styling gezeten. Ik heb een hoop lettergroottes aangepast (vooral groter gemaakt), aan het kleurcontrast gezeten (groen/geel op zwart) en borders toegevoegd (hij kan zo goed zien hoe de pagina is opgedeeld)
 
 <img src="img/readme-img/Week3-prototype-navigatie.png" alt="Afbeelding van het week 3 prototype, pagina navigatie" height=400px>
+
+### Takeaways voor volgende week:
+- Nieuwe keybinds: SHIFT + ALT + Pijltoetsen (want shift + alt is al gebruikt)
+- Keybind voor locatie
+- Beweeg knoppen anders formatteren
+      OMHOOG
+LINKS OMLAAG RECHTS
+- Terugpagina een heading maken (button in heading)
+- H1 iets kleiner, zodat "Supermarkt Navigatie" niet 2 regels gaat opnemen
+- High contrast filter (prefers:high-contrast ofzo)
+- Meer headings
+
+- Meer producten kunnen toevoegen, dit werkend maken
+- Route voor meerdere producten
+
+
+## Dag 6 (20 april) 
+### Werkzaamheden
+Vandaag begonnen we met nog een uitleg over de exclusive design principes. Vasilis heeft wat voorbeelden laten zien van websites voor blinden en een film voor een dove. Wel was ik vandaag 15m te laat omdat ik mijn trein had gemist.
+
+Ik heb een lijstje gemaakt voor wat ik vandaag (en morgen ging doen), dus die ga ik bij deze af. Ten eerste heb SHIFT toegevoegd aan de keybinds. Verder heb ik een keybind toegevoegd voor de locatieknop en heb ik de 4 beweegknoppen iets anders gepositioneerd. Ook heb ik de onderste link (om terug te gaan naar producten) een h2 gemaakt. Dit is een a in een h2, was een aanrader van Berend. Wat ik niet wist is dat de fontsize van een a en van de h2 bij elkaar zouden optellen dus ik heb hier aparte styling vooor moeten geven.
+
+Prefers high contrast
+
+
+
 
 
 

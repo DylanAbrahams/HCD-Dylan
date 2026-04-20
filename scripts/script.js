@@ -103,10 +103,11 @@ function move(direction) {
   updateRoute();
 }
 
-// ---------------- KEYBOARD (ALT + ARROWS) ----------------
+// ---------------- KEYBOARD (ALT + SHIFT + ARROWS) ----------------
 
 document.addEventListener("keydown", (e) => {
-  if (!e.altKey) return;
+  // Alleen reageren als ALT + SHIFT ingedrukt zijn
+  if (!(e.altKey && e.shiftKey)) return;
 
   switch (e.key) {
     case "ArrowUp":
@@ -127,6 +128,12 @@ document.addEventListener("keydown", (e) => {
     case "ArrowRight":
       e.preventDefault();
       move("right");
+      break;
+
+    case "l":
+    case "L": // voor de zekerheid (Shift kan hoofdletter maken)
+      e.preventDefault();
+      showLocation();
       break;
   }
 });

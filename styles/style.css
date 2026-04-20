@@ -34,11 +34,15 @@ section {
 }
 
 h1 {
-  font-size:6em;
+  font-size:5em;
 }
 
 h2 {
   font-size: 3em;
+
+  a {
+    font-size:1em;
+  }
 }
 
 p {
@@ -109,4 +113,42 @@ ul {
 
 .cell.player {
   background: var(--user-color);
+}
+
+
+
+
+/* High contrast filter, hier heb ik chatgpt voor gebruikt, vervolgens heb ik geleerd over 'forced-colors' */
+/* Prompt: Kun je deze styling houden voor wanneer iemand high contrast heeft? */
+
+
+@media (forced-colors: active) {
+  body {
+    forced-color-adjust: none;
+  }
+
+  .cell {
+    border: 1px solid CanvasText;
+  }
+
+  .cell.product {
+    forced-color-adjust: none;
+    background: var(--product-color);
+  }
+
+  .cell.player {
+    forced-color-adjust: none;
+    background: var(--user-color);
+  }
+
+  button, a {
+    forced-color-adjust: none;
+    border-color: LinkText;
+    color: LinkText;
+  }
+
+  button:hover, a:hover {
+    background: Highlight;
+    color: HighlightText;
+  }
 }
