@@ -365,7 +365,42 @@ Verder had ik voor de grap nog snake gemaakt wat inhoud dat wanneer je een produ
 Vandaag werd ik gerandomized met Alisha. Zij was er niet. Bijna 30 mensen waren er niet meer. Ik had mn checkout gedaan met Julius. Hij heeft een video player voor Darice, wie doof is. Hij heeft een video met een irritante piep, wat hij over wilde brengen naar beeld. Om het irritanter te maken heeft hij de PIEP tekst meer in beeld en geel gemaakt en een HUE groot en fel gemaakt. Morgen ben ik van plan om de sneltoetsen mooier weer te geven, misschien de volgorde van producten wat beter te doen en wat nonsense en uiteraard testen.
 
 ## Dag 7 (21 april)
-Vandaag is de laatste testdag. Ten eerste heb ik de informatie over de sneltoetsen in een aparte section gezet en deze bovenaan gezet. 
+## Werkzaamheden
+Vandaag is de laatste testdag. Ten eerste heb ik de informatie over de sneltoetsen in een aparte section gezet en deze bovenaan gezet. Ik vond het fijn om de instructies om te bewegen niet te groot te hebben. 
+
+Ik heb nog een beetje gesleuteld met de screen reader. Er waren nog een paar stukken waar hij iets wel/niet las, bv. bij het switchen van pagina's.
+
+Ik had nog code geschreven voor een knop waarmee je kunt togglen tussen de "snake-versie" waar ik het gisteren over had. Ik heb hier uiteindelijk niet mee getest want ik wilde niet dat het in de weg zat van de rest en hij niet echt toegevoegde waarde geeft naast pure nonsense. 
+
+Ik heb een scan geluidje toegevoegd wanneer je een product hebt gevonden. Deze heb ik van Soundstripe.com. Link staat in bronnenlijst. Ik kwam er nog achter dat hij het niet gelijk deed op Github, want ik moet de folder niet met /audio aanspreken maar met audio, want anders zoekt Github hem in de root. 
+
+Misschien ga ik nog een eind sequence toevoegen dat je naar een kassa loopt met wat geluidjes erbij en misschien als easter egg een geluidje van de controle waar we altijd last van hebben tijdens een zelfscan.
+
+
+
+
+### Test met Berend
+Mijn grootste veranderingen die ik wil laten zien: Keybinds, meerdere producten, high contrast en geluidje
+
+Berend heeft al SHift ALt L
+SHift Alt S heeft NVDA al 
+
+Hij was benieuwd hoe ik de high contrast had gefixt, het was forced-colors: active.
+
+Leuk geluidje
+
+Hij was erg positief over mijn product. Leuk product
+
+Hij ging wel enthusiast door de keybind instructies, misschien beter list items doen
+
+Skip knop maar geen verwijder knop.
+
+(Niet uit test) Hij is nog niet responsief
+
+## Week 4 Overzicht
+
+
+
 
 
 
