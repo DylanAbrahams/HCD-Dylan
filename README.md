@@ -384,3 +384,8 @@ Link: https://exclusive-design.vasilis.nl/
 
 aria-live
 Link: https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Attributes/aria-live
+
+Scan Sound
+Link: https://www.soundstripe.com/library/sound-effects/32896
+
+
