@@ -145,7 +145,7 @@ function checkArrival() {
   ) {
     routeEl.textContent = `${currentProduct} gevonden`;
 
-    const audio = new Audio("/audio/Audio_Scan.m4a");
+    const audio = new Audio("audio/Audio_Scan.m4a");
     audio.play();
 
     setTimeout(() => {
