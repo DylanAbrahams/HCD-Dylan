@@ -240,11 +240,11 @@ Lettertype boeit niet echt. Liever geen cursief. Het liefst dikgedrukt.
 ## Week 2 Overzicht
 Deze week heb ik maar 1 dag besteed aan HCD aangezien de vrije dagen en ik vooral aandacht moest besteden aan API. Ik ben vooral bezig geweest met de feedbackpunten die ik vorige week van Berend heb gekregen. Ik was hier mee bezig totdat ik om 1 uur de test ging doen met Berend. 
 
-<img src="img/readme-img/Week2-prototype.png" alt="Afbeelding van het week 2 prototype" height=400px>
+<img src="img/readme-img/Week2_prototype.png" alt="Afbeelding van het week 2 prototype" height=400px>
 
 Verder heb ik NVDA geinstalleerd en gedownloadt. Ik heb hier fijn mee kunnen testen met de screen reader. Fijn dat ik voor mezelf ook wat intuitie kan opbouwen door zelf de screen reader te gebruiken. Pas als ik in mijn website met mijn ogen dicht het product kan vinden, betekent het dat ik hem goed in elkaar heb gezet.
 
-<img src="img/readme-img/Week2-NVDA.png" alt="Afbeelding van het week 2 NVDA" height=400px>
+<img src="img/readme-img/Week2_NVDA.png" alt="Afbeelding van het week 2 NVDA" height=400px>
 
 Verder heb ik feedback gekregen van mijn test met Berend en het voortgangsgesprek van vrijdag.
 
@@ -362,9 +362,10 @@ Vervolgens heb ik dit ook toegepast op het navigatie script. Ik heb ervoor gezor
 Verder had ik voor de grap nog snake gemaakt wat inhoud dat wanneer je een product hebt gevonden er een extra blokje achter het speler blokje loopt. Het idee was om wat nonsense toe te voegen, maar hier is niet heel veel aan. Ik kan het er in houden voor de lol.
 
 ### Checkout met Julius
-Vandaag werd ik gerandomized met Alisha. Zij was er niet. Bijna 30 mensen waren er niet meer. Ik had mn checkout gedaan met Julius. Hij heeft een video player voor Darice, wie doof is. Hij heeft een video met een irritante piep, wat hij over wilde brengen naar beeld. Om het irritanter te maken heeft hij de PIEP tekst meer in beeld en geel gemaakt en een HUE groot en fel gemaakt. Morgen ben ik van plan om de sneltoetsen mooier weer te geven, misschien de volgorde van producten wat beter te doen, misschien wat nonsense en uiteraard testen.
+Vandaag werd ik gerandomized met Alisha. Zij was er niet. Bijna 30 mensen waren er niet meer. Ik had mn checkout gedaan met Julius. Hij heeft een video player voor Darice, wie doof is. Hij heeft een video met een irritante piep, wat hij over wilde brengen naar beeld. Om het irritanter te maken heeft hij de PIEP tekst meer in beeld en geel gemaakt en een HUE groot en fel gemaakt. Morgen ben ik van plan om de sneltoetsen mooier weer te geven, misschien de volgorde van producten wat beter te doen en wat nonsense en uiteraard testen.
 
-
+## Dag 7 (21 april)
+Vandaag is de laatste testdag. Ten eerste heb ik de informatie over de sneltoetsen in een aparte section gezet en deze bovenaan gezet. 
 
 
 

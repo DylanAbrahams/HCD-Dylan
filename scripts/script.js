@@ -1,24 +1,24 @@
 const routeEl = document.getElementById("route");
 const gridDiv = document.getElementById("grid");
 
-let gridSize = 6;
+let gridSize = 8;
 let currentPosition = { x: 0, y: 0 };
 
 // ---------------- PRODUCTS ----------------
 
 const products = {
-  appel: { x: 0, y: 2 },
-  banaan: { x: 5, y: 5 },
+  appel: { x: 1, y: 7 },
+  banaan: { x: 7, y: 7 },
 
-  melk: { x: 1, y: 3 },
-  brood: { x: 2, y: 3 },
-  pasta: { x: 3, y: 2 },
-  rijst: { x: 4, y: 2 },
+  melk: { x: 2, y: 5 },
+  brood: { x: 3, y: 5 },
+  pasta: { x: 5, y: 4 },
+  rijst: { x: 6, y: 4 },
 
-  cola: { x: 0, y: 1 },
-  water: { x: 5, y: 1 },
+  cola: { x: 1, y: 2 },
+  water: { x: 7, y: 2 },
 
-  chips: { x: 3, y: 0 }
+  chips: { x: 4, y: 1 }
 };
 
 // ---------------- QUEUE ----------------
