@@ -382,8 +382,10 @@ Misschien ga ik nog een eind sequence toevoegen dat je naar een kassa loopt met 
 ### Test met Berend
 Mijn grootste veranderingen die ik wil laten zien: Keybinds, meerdere producten, high contrast en geluidje
 
-Berend heeft al SHift ALt L
-SHift Alt S heeft NVDA al 
+
+Aantekeningen test:
+Berend heeft al SHift ALt L als eigen custom keybind
+SHift Alt S heeft NVDA al als default keybind
 
 Hij was benieuwd hoe ik de high contrast had gefixt, het was forced-colors: active.
 
@@ -399,14 +401,30 @@ Skip knop maar geen verwijder knop.
 
 ## Week 4 Overzicht
 
-Laatste voortgangsgesprek:
+Dit was de laatste week van het vak, met uitzondering van de meivakantie en beoordelingsweek, wat betekende dat deze week de laatste test was. Ik had vorige week niet super veel kritiek naast wat keybinds verbeteren dus ik kon mijn prototype gaan uitbreiden. De grootste toevoeging is dat je nu meerdere producten kunt kiezen in de eerste pagina en deze allemaal na elkaar kan vinden op de navigatiepagina. Deze producten zijn ook verdeeld in categorieen. 
+
+<img src="img/readme-img/Week4-prototype-product" alt="Afbeelding van het week 4 prototype" height=400px>
+
+Op de navigatiepagina heb ik ervoor gezorgd dat de producten allemaal worden opgehaald. Dit wordt gedaan met localstorage. De volgorde van de producten is momenteel gebaseerd op de volgorde waarin je ze kiest. Misschien ga ik er een systeem voor maken dat hij kiest welk product het meest dichtbij van bent. Wel heb ik een nieuwe knop gemaakt waarmee je een product kunt skippen. Uiteindelijk komt dat product als laatste opnieuw in de volgorde. Verder heb ik deze week een hoop QoL updates gegeven aan de screen reader. De screenreader geeft alleen informatie die je nodig hebt en leest niet altijd alles meerdere keren op. Bv. als je brood toevoegt aan de lijst wordt niet steeds de hele lijst opgelezen alsof je "Ik ga op reis en ik neem mee.." aan het spelen bent. Daarnaast heb ik voor wat immersie nog een scan geluidje toegevoegd wanneer je bij een product aankomt. 
+
+<img src="img/readme-img/Week4-prototype-navigatie" alt="Afbeelding van het week 4 prototype" height=400px>
+
+<img src="img/readme-img/Week4-prototype-navigatie-2" alt="Afbeelding van het week 4 prototype" height=400px>
+
+
+Vrijdag had ik mijn voortgangsgesprek met Vasilis en mijn clubje.
+Aantekeningen laatste voortgangsgesprek:
 
 - Ik ga nog een einde toevoegen (kassa)
 - Laptop in supermarkt???
+- Volgorde meest dichtbij?
+- Skip / Verwijder knop
 - Het idee is wel nonsense op zich
 - Wellicht op mobiel werkend
 
+Ik heb nu nog de meivakantie + wat extra dagen voor deze laatste paar touches. Ik hoop dat ik binnen een dag wel al deze veranderingen kan toepassen aangezien ik nog veel werk heb aan API en nog moet beginnen met mijn eigen website.
 
+## Laatste paar dagen
 
 
 
