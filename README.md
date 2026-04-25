@@ -399,7 +399,12 @@ Skip knop maar geen verwijder knop.
 
 ## Week 4 Overzicht
 
+Laatste voortgangsgesprek:
 
+- Ik ga nog een einde toevoegen (kassa)
+- Laptop in supermarkt???
+- Het idee is wel nonsense op zich
+- Wellicht op mobiel werkend
 
 
 
