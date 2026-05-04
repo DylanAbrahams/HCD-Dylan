@@ -3,6 +3,7 @@ const gridDiv = document.getElementById("grid");
 
 let gridSize = 8;
 let currentPosition = { x: 0, y: 0 };
+let gameFinished = false;
 
 // ---------------- PRODUCTS ----------------
 
@@ -21,17 +22,31 @@ const products = {
   chips: { x: 4, y: 1 }
 };
 
+// ---------------- CHECKOUT ----------------
+
+const checkout = { x: 0, y: 0 };
+let goingToCheckout = false;
+
 // ---------------- QUEUE ----------------
 
-let productQueue = JSON.parse(
-  localStorage.getItem("selectedProducts")
-);
+let productQueue;
 
-if (!productQueue || productQueue.length === 0) {
+try {
+  productQueue = JSON.parse(localStorage.getItem("selectedProducts"));
+} catch {
+  productQueue = null;
+}
+
+if (!Array.isArray(productQueue) || productQueue.length === 0) {
   window.location.href = "index.html";
 }
 
 let currentProduct = productQueue.shift();
+
+if (!products[currentProduct]) {
+  currentProduct = productQueue.shift();
+}
+
 let targetPosition = products[currentProduct];
 
 document.getElementById("currentProduct").textContent =
@@ -41,11 +56,24 @@ document.getElementById("currentProduct").textContent =
 
 function nextProduct() {
   if (productQueue.length === 0) {
-    routeEl.textContent = "Alle producten gevonden";
+    goingToCheckout = true;
+    targetPosition = checkout;
+
+    document.getElementById("currentProduct").textContent =
+      "Ga naar de kassa";
+
+    updateGrid();
+    updateRoute();
     return;
   }
 
   currentProduct = productQueue.shift();
+
+  if (!products[currentProduct]) {
+    nextProduct();
+    return;
+  }
+
   targetPosition = products[currentProduct];
 
   document.getElementById("currentProduct").textContent =
@@ -63,11 +91,39 @@ function skipProduct() {
     return;
   }
 
-  // huidig product naar achteren zetten
   productQueue.push(currentProduct);
 
-  // volgende pakken
   currentProduct = productQueue.shift();
+  targetPosition = products[currentProduct];
+
+  document.getElementById("currentProduct").textContent =
+    `Navigatie naar: ${currentProduct}`;
+
+  updateGrid();
+  updateRoute();
+}
+
+function deleteProduct() {
+  if (productQueue.length === 0) {
+    goingToCheckout = true;
+    targetPosition = checkout;
+
+    document.getElementById("currentProduct").textContent =
+      "Ga naar de kassa";
+
+    updateGrid();
+    updateRoute();
+    return;
+  }
+
+  // huidig product gewoon weggooien (niet terugplaatsen)
+  currentProduct = productQueue.shift();
+
+  if (!products[currentProduct]) {
+    deleteProduct();
+    return;
+  }
+
   targetPosition = products[currentProduct];
 
   document.getElementById("currentProduct").textContent =
@@ -100,17 +156,16 @@ function updateGrid() {
     c.el.className = "cell";
   });
 
-  // player
   const player = grid.find(
     c => c.x === currentPosition.x && c.y === currentPosition.y
   );
   if (player) player.el.classList.add("player");
 
-  // current product
-  const productCell = grid.find(
+  const targetCell = grid.find(
     c => c.x === targetPosition.x && c.y === targetPosition.y
   );
-  if (productCell) productCell.el.classList.add("product");
+
+  if (targetCell) targetCell.el.classList.add("product");
 }
 
 // ---------------- ROUTE ----------------
@@ -127,9 +182,13 @@ function getRoute() {
   if (dy > 0) parts.push(`${dy} stap${dy === 1 ? "" : "pen"} vooruit`);
   if (dy < 0) parts.push(`${Math.abs(dy)} stap${Math.abs(dy) === 1 ? "" : "pen"} achteruit`);
 
-  return parts.length
-    ? `Route naar ${currentProduct}: ${parts.join(", ")}`
-    : `Je bent aangekomen bij ${currentProduct}`;
+  if (!parts.length) {
+    return goingToCheckout
+      ? "Je bent bij de kassa"
+      : `Je bent aangekomen bij ${currentProduct}`;
+  }
+
+  return `Route naar ${goingToCheckout ? "de kassa" : currentProduct}: ${parts.join(", ")}`;
 }
 
 function updateRoute() {
@@ -143,10 +202,17 @@ function checkArrival() {
     currentPosition.x === targetPosition.x &&
     currentPosition.y === targetPosition.y
   ) {
+    if (goingToCheckout) {
+      routeEl.textContent = "Je hebt afgerekend! Klaar met winkelen.";
+      document.getElementById("currentProduct").textContent = "Voltooid";
+      gameFinished = true;
+      return;
+    }
+
     routeEl.textContent = `${currentProduct} gevonden`;
 
     const audio = new Audio("audio/Audio_Scan.m4a");
-    audio.play();
+    audio.play().catch(() => { });
 
     setTimeout(() => {
       nextProduct();
@@ -157,6 +223,8 @@ function checkArrival() {
 // ---------------- MOVEMENT ----------------
 
 function move(direction) {
+  if (gameFinished) return;
+
   switch (direction) {
     case "up":
       if (currentPosition.y < gridSize - 1) currentPosition.y++;
@@ -184,6 +252,7 @@ function move(direction) {
 
 document.addEventListener("keydown", (e) => {
   if (!(e.altKey && e.shiftKey)) return;
+  if (gameFinished) return;
 
   const key = e.key.toLowerCase();
 
@@ -217,6 +286,10 @@ document.addEventListener("keydown", (e) => {
       e.preventDefault();
       skipProduct();
       break;
+    case "v":
+      e.preventDefault();
+      deleteProduct();
+      break;
   }
 });
 
@@ -228,18 +301,23 @@ document.querySelectorAll("[data-move]").forEach(btn => {
   });
 });
 
-// SKIP BUTTON (JOUW HTML FIX)
 document
   .getElementById("skipProductBtn")
   .addEventListener("click", skipProduct);
-
-// ---------------- LOCATION ----------------
 
 document
   .getElementById("showLocationBtn")
   .addEventListener("click", showLocation);
 
+document
+  .getElementById("deleteProductBtn")
+  .addEventListener("click", deleteProduct);
+
+// ---------------- LOCATION ----------------
+
 function showLocation() {
+  if (gameFinished) return;
+
   const rij = currentPosition.y + 1;
   const kolom = currentPosition.x + 1;
 

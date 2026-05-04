@@ -425,7 +425,7 @@ Aantekeningen laatste voortgangsgesprek:
 Ik heb nu nog de meivakantie + wat extra dagen voor deze laatste paar touches. Ik hoop dat ik binnen een dag wel al deze veranderingen kan toepassen aangezien ik nog veel werk heb aan API en nog moet beginnen met mijn eigen website.
 
 ## Laatste paar dagen
-
+Ik ben in de meivakantie niet super veel bezig geweest met dit vak. Ik heb vooral nog tijd besteed aan API en natuurlijk van wat vrije tijd genieten. Ik heb er in ieder geval nog voor gezorgd dat er een einde is. Daarmee bedoel ik dat als je al je producten heb, je naar de kassa wordt gestuurd en je vervolgens een prompt krijgt dat het gelukt is. Verder heb ik naast de skip knop ook een verwijder knop toegevoegd. Het idee van de skip knop is dat je producten niet op een vaste volgorde wil houden en de gebruiker de vrijheid wil geven om het te doen in de volgorde die hij zelf wil. De verwijder knop is specifiek bedoeld voor producten die niet meer nodig zijn of eventueel niet beschikbaar zijn.  
 
 
 
