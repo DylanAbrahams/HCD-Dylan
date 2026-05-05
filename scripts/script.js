@@ -24,7 +24,7 @@ const products = {
 
 // ---------------- CHECKOUT ----------------
 
-const checkout = { x: 0, y: 0 };
+const checkout = { x: 7, y: 0 };
 let goingToCheckout = false;
 
 // ---------------- QUEUE ----------------
