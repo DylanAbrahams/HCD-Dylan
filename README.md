@@ -403,13 +403,13 @@ Skip knop maar geen verwijder knop.
 
 Dit was de laatste week van het vak, met uitzondering van de meivakantie en beoordelingsweek, wat betekende dat deze week de laatste test was. Ik had vorige week niet super veel kritiek naast wat keybinds verbeteren dus ik kon mijn prototype gaan uitbreiden. De grootste toevoeging is dat je nu meerdere producten kunt kiezen in de eerste pagina en deze allemaal na elkaar kan vinden op de navigatiepagina. Deze producten zijn ook verdeeld in categorieen. 
 
-<img src="img/readme-img/Week4-prototype-product" alt="Afbeelding van het week 4 prototype" height=400px>
+<img src="img/readme-img/Week4-prototype-product.png" alt="Afbeelding van het week 4 prototype" height=400px>
 
 Op de navigatiepagina heb ik ervoor gezorgd dat de producten allemaal worden opgehaald. Dit wordt gedaan met localstorage. De volgorde van de producten is momenteel gebaseerd op de volgorde waarin je ze kiest. Misschien ga ik er een systeem voor maken dat hij kiest welk product het meest dichtbij van bent. Wel heb ik een nieuwe knop gemaakt waarmee je een product kunt skippen. Uiteindelijk komt dat product als laatste opnieuw in de volgorde. Verder heb ik deze week een hoop QoL updates gegeven aan de screen reader. De screenreader geeft alleen informatie die je nodig hebt en leest niet altijd alles meerdere keren op. Bv. als je brood toevoegt aan de lijst wordt niet steeds de hele lijst opgelezen alsof je "Ik ga op reis en ik neem mee.." aan het spelen bent. Daarnaast heb ik voor wat immersie nog een scan geluidje toegevoegd wanneer je bij een product aankomt. 
 
-<img src="img/readme-img/Week4-prototype-navigatie" alt="Afbeelding van het week 4 prototype" height=400px>
+<img src="img/readme-img/Week4-prototype-navigatie.png" alt="Afbeelding van het week 4 prototype" height=400px>
 
-<img src="img/readme-img/Week4-prototype-navigatie-2" alt="Afbeelding van het week 4 prototype" height=400px>
+<img src="img/readme-img/Week4-prototype-navigatie-2.png" alt="Afbeelding van het week 4 prototype" height=400px>
 
 
 Vrijdag had ik mijn voortgangsgesprek met Vasilis en mijn clubje.
@@ -425,9 +425,20 @@ Aantekeningen laatste voortgangsgesprek:
 Ik heb nu nog de meivakantie + wat extra dagen voor deze laatste paar touches. Ik hoop dat ik binnen een dag wel al deze veranderingen kan toepassen aangezien ik nog veel werk heb aan API en nog moet beginnen met mijn eigen website.
 
 ## Laatste paar dagen
-Ik ben in de meivakantie niet super veel bezig geweest met dit vak. Ik heb vooral nog tijd besteed aan API en natuurlijk van wat vrije tijd genieten. Ik heb er in ieder geval nog voor gezorgd dat er een einde is. Daarmee bedoel ik dat als je al je producten heb, je naar de kassa wordt gestuurd en je vervolgens een prompt krijgt dat het gelukt is. Verder heb ik naast de skip knop ook een verwijder knop toegevoegd. Het idee van de skip knop is dat je producten niet op een vaste volgorde wil houden en de gebruiker de vrijheid wil geven om het te doen in de volgorde die hij zelf wil. De verwijder knop is specifiek bedoeld voor producten die niet meer nodig zijn of eventueel niet beschikbaar zijn.  
+Ik ben in de meivakantie niet super veel bezig geweest met dit vak. Ik heb vooral nog tijd besteed aan API en natuurlijk van wat vrije tijd genieten. Ik heb er in ieder geval nog voor gezorgd dat er een einde is. Daarmee bedoel ik dat als je al je producten heb, je naar de kassa wordt gestuurd en je vervolgens een prompt krijgt dat het gelukt is. Verder heb ik naast de skip knop ook een verwijder knop toegevoegd. Het idee van de skip knop is dat je producten niet op een vaste volgorde wil houden en de gebruiker de vrijheid wil geven om het te doen in de volgorde die hij zelf wil. De verwijder knop is specifiek bedoeld voor producten die niet meer nodig zijn of eventueel niet beschikbaar zijn.
 
+## Eindreflectie
+Ik ben zeer tevreden met wat ik de afgelopen maand heb gemaakt. Dit was leuk om daadwerkelijk iets te maken voor iemand die websites altijd met een screen reader ervaart. Ik vond Berend een fijne testpersoon aangezien hij vaak positief was, maar ook altijd goede tips had. Ik heb elke week, ondanks we vaak maar 1 dag hadden, verschillende iteraties kunnen maken voor mijn prototype. 
 
+In week 1 had ik al mijn concept en het idee voor mijn grid. In week 2 had ik al veel verbeteringen aan de screen reader waardoor het duidelijk was waar je je bevindt op het grid. In week 3 heb ik de website opgedeeld in 2 pagina's en in week 4 heb ik ervoor gezorgd dat je meerdere producten kunt selecteren en daarna heb ik nog een einde toegevoegd. Daarnaast heb ik elke week aanpassingen gemaakt aan layout, contrast, keybinds etc. 
+
+Verder heb ik gebruik gemaakt van de Exclusive Design principes.
+- <strong>Study Situation:</strong> Deze is wel voor de hand liggend. Ik ben het hele project met 1 persoon wezen testen en heb mijn prototype volledig gebaseerd op deze persoon en zijn achtergrond. Ik heb mijn iteraties kunnen baseren op zijn eigen instellingen van NVDA, waaronder het feit dat hij high-contrast gebruikt en custom keybinds heeft.
+- <strong>Ignore Conventions:</strong> Ik heb niet gekeken naar wat er allemaal "hoort" op een prototype zoals mijne. Als ik me had gehouden aan conventies zou ik niet een grid hebben die je met custom keybinds kan bedienen. Ik ben zelf tot het resultaat gekomen waar ik nu ben.
+- <strong>Prioritise Identity:</strong> De website is specifiek gemaakt voor Berend. Als ik een van de andere testpersonen had was dit niet dezelfde website geweest. Berend houdt zich bezig met Indoor Navigation. Dit komt terug in mijn prototype, waarin je genavigeerd wordt binnen een supermarkt.
+- <strong>Add nonsense:</strong> Dit project is niet iets wat je zomaar ziet op een website. Een navigatie website voor in een supermarkt op je laptop. Best wel onzinnig. Maar dat betekent niet dat dit een waardeloos project is. Het geeft een goed beeld van wat je precies moet weten wanneer je het doel hebt om al jouw producten uit te kiezen en te vinden in de supermarkt.
+
+Mijn laatste test is goed gegaan. Berend kan zonder enige hulp van mij zijn wegvinden door de website en kan de producten vinden, zowel met behulp van knoppen als met keybinds. Verder kan hij altijd weten waar hij staat dankzij de locatieknop en heeft hij controle over welke producten hij gaat vinden.
 
 ## Bronnenlijst
 
