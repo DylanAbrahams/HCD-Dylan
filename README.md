@@ -457,4 +457,18 @@ Link: https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/
 Scan Sound
 Link: https://www.soundstripe.com/library/sound-effects/32896
 
+Includes
+Link: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes
 
+.shift array
+Link: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/shift
+
+### ChatGPT
+Afstand tussen speler en product
+Prompt: "Ik wil een tekst waarin staat hoeveel stappen ik vooruit/achteruit en links/rechts moet zetten om bij het product te komen"
+
+LocalStorage/Producten overzetten van pagina A naar B
+Prompt: "Ik wil dat de producten op pagina A worden overgezet naar pagina B door deze in localStorage op te slaan."
+
+Forced-colors - Hiermee kon ik custom sttyling toepassen op high contrast mode 
+Prompt: "Kun je deze styling houden voor wanneer iemand high contrast heeft?"

@@ -29,6 +29,13 @@ let goingToCheckout = false;
 
 // ---------------- QUEUE ----------------
 
+// Er wordt veel .shift gebruikt. Hiermee ga je naar het volgende product in de array
+// Link: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/shift
+
+// Hier is ChatGPT voor gebruikt om items uit localstorage te halen
+// Prompt: "Ik wil dat de producten op pagina A worden overgezet naar pagina B door deze in localStorage op te slaan."
+
+
 let productQueue;
 
 try {
@@ -116,7 +123,6 @@ function deleteProduct() {
     return;
   }
 
-  // huidig product gewoon weggooien (niet terugplaatsen)
   currentProduct = productQueue.shift();
 
   if (!products[currentProduct]) {
@@ -176,6 +182,9 @@ function getRoute() {
 
   const parts = [];
 
+  // Deze code is geschreven door ChatGPT, het komt neer op bepalen waar je staat op een grid.
+  // Prompt: "Ik wil een tekst waarin staat hoeveel stappen ik vooruit/achteruit en links/rechts moet zetten om bij het product te komen"
+
   if (dx > 0) parts.push(`${dx} stap${dx === 1 ? "" : "pen"} naar rechts`);
   if (dx < 0) parts.push(`${Math.abs(dx)} stap${Math.abs(dx) === 1 ? "" : "pen"} naar links`);
 
@@ -195,7 +204,7 @@ function updateRoute() {
   routeEl.textContent = getRoute();
 }
 
-// ---------------- ARRIVAL CHECK ----------------
+// ---------------- KASSA CHECK ----------------
 
 function checkArrival() {
   if (

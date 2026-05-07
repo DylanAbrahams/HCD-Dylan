@@ -120,10 +120,6 @@ ul {
   background: var(--product-color);
 }
 
-.cell.snake {
-  background:green;
-}
-
 .cell.player {
   background: var(--user-color);
 }

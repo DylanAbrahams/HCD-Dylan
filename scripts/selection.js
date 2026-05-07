@@ -3,12 +3,13 @@ let selectedProducts = [];
 const selectedList = document.getElementById("selectedList");
 const liveStatus = document.getElementById("liveStatus");
 
-// Product toggles
+// Producten togglen 
 document.querySelectorAll('[data-product]').forEach(button => {
   button.addEventListener('click', () => {
 
     const product = button.dataset.product;
 
+    // Bron voor includes: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes
     if (selectedProducts.includes(product)) {
       selectedProducts = selectedProducts.filter(p => p !== product);
       button.classList.remove("selected");
@@ -46,19 +47,18 @@ document.getElementById("startRoute").addEventListener("click", () => {
   const message =
     `Navigatie gestart naar: ${selectedProducts.join(", ")}`;
 
-  // reset + trigger ARIA opnieuw
+  // Opnieuw de tekst lezen voordat je naar de product pagina gaat
   liveStatus.textContent = "";
   setTimeout(() => {
     liveStatus.textContent = message;
   }, 50);
 
-  // opslaan selectie
+  // Producten opslaan
   localStorage.setItem(
     "selectedProducts",
     JSON.stringify(selectedProducts)
   );
 
-  // genoeg tijd voor volledige speech
   setTimeout(() => {
     window.location.href = "navigatie.html";
   }, 2500);
